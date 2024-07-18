@@ -1,10 +1,9 @@
 [Back](https://ycvogt.github.io/my_portfolio/)
 
+
 ## The Importance of Being Earnest: A Quantitative Text Analysis
 
 The aim of this project was to automatically dissect and clean the dramatic text _The Importance of Being Earnest_ by Oscar Wilde (downloaded from _Project Gutenberg_) in order to quantify the speech acts and word counts per character overall and per act. 
-
-
 
 **Skills**: textual data cleaning, structuring, tokenization, visualization
 
@@ -171,9 +170,10 @@ In the second act, Algernon (38%) and Cecily (24%) make up the vast majority in 
 In the final act, Algernon dominates again with 25%. The remaining characters yield the following results: Cecily (15%), Miss Prism (6%), Merriman (5%), Jack (5%), Lady Bracknell (3%), and Gwendolen (2%). 
 
 <img src="images/IBE.jpg"/>
+Image: https://en.wikipedia.org/wiki/File:Algy-and-Jack-1895.jpg
 
 ### References:
-Image: https://en.wikipedia.org/wiki/File:Algy-and-Jack-1895.jpg
+
 Wilde, Oscar. 1895. _The Importance of Being Earnest_. Published on: Project Gutenberg (https://www.gutenberg.org/cache/epub/844/pg844.txt, last accessed July 12th, 2024).
 
 ---
