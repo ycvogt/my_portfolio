@@ -18,8 +18,8 @@
 ### R Projects
 [Project 1: Vowel Charts](/posts/vowels.md)
 
-### Other Projects
-#[Project 1: Title](http://example.com/)
+### Linguistics Projects
+[Project 1: Title](/posts/ling_project1.md)
 
 ---
 ---
