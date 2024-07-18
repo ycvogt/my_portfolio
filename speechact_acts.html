@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.3.4.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="ce4ee689-892b-47b7-a01d-c8051d882de1" data-root-id="p1173" style="display: contents;"></div>
+  
+    <script type="application/json" id="p1215">
+      {"b7dc104c-9bd0-4879-8411-4982bed3b189":{"version":"3.3.4","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p1173","attributes":{"width":1200,"height":300,"x_range":{"type":"object","name":"FactorRange","id":"p1172","attributes":{"factors":[["JACK","Act 1"],["JACK","Act 2"],["JACK","Act 3"],["ALGERNON","Act 1"],["ALGERNON","Act 2"],["ALGERNON","Act 3"],["LADY BRACKNELL","Act 1"],["LADY BRACKNELL","Act 2"],["LADY BRACKNELL","Act 3"],["GWENDOLEN","Act 1"],["GWENDOLEN","Act 2"],["GWENDOLEN","Act 3"],["LANE","Act 1"],["LANE","Act 2"],["LANE","Act 3"],["CECILY","Act 1"],["CECILY","Act 2"],["CECILY","Act 3"],["MISS PRISM","Act 1"],["MISS PRISM","Act 2"],["MISS PRISM","Act 3"],["CHASUBLE","Act 1"],["CHASUBLE","Act 2"],["CHASUBLE","Act 3"],["MERRIMAN","Act 1"],["MERRIMAN","Act 2"],["MERRIMAN","Act 3"]],"range_padding":0.1}},"y_range":{"type":"object","name":"DataRange1d","id":"p1175","attributes":{"start":0}},"x_scale":{"type":"object","name":"CategoricalScale","id":"p1183"},"y_scale":{"type":"object","name":"LinearScale","id":"p1184"},"title":{"type":"object","name":"Title","id":"p1176","attributes":{"text":"Speech Acts by Act"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1203","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1169","attributes":{"selected":{"type":"object","name":"Selection","id":"p1170","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1171"},"data":{"type":"map","entries":[["x",[["JACK","Act 1"],["JACK","Act 2"],["JACK","Act 3"],["ALGERNON","Act 1"],["ALGERNON","Act 2"],["ALGERNON","Act 3"],["LADY BRACKNELL","Act 1"],["LADY BRACKNELL","Act 2"],["LADY BRACKNELL","Act 3"],["GWENDOLEN","Act 1"],["GWENDOLEN","Act 2"],["GWENDOLEN","Act 3"],["LANE","Act 1"],["LANE","Act 2"],["LANE","Act 3"],["CECILY","Act 1"],["CECILY","Act 2"],["CECILY","Act 3"],["MISS PRISM","Act 1"],["MISS PRISM","Act 2"],["MISS PRISM","Act 3"],["CHASUBLE","Act 1"],["CHASUBLE","Act 2"],["CHASUBLE","Act 3"],["MERRIMAN","Act 1"],["MERRIMAN","Act 2"],["MERRIMAN","Act 3"]]],["counts",[0.38,0.16,0.23,0.32,0.22,0.1,0.12,0.0,0.27,0.11,0.11,0.13,0.07,0.0,0.0,0.0,0.32,0.14,0.0,0.08,0.06,0.0,0.08,0.07,0.0,0.04,0.01]]]}}},"view":{"type":"object","name":"CDSView","id":"p1204","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1205"}}},"glyph":{"type":"object","name":"VBar","id":"p1200","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"counts"},"line_color":{"type":"value","value":"#1f77b4"},"fill_color":{"type":"value","value":"#1f77b4"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1201","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"counts"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1202","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"counts"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1182","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p1195"},{"type":"object","name":"WheelZoomTool","id":"p1196","attributes":{"renderers":"auto"}},{"type":"object","name":"HoverTool","id":"p1206","attributes":{"renderers":"auto","tooltips":[["x","@counts"]]}}]}},"toolbar_location":"left","toolbar_sticky":false,"left":[{"type":"object","name":"LinearAxis","id":"p1190","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1191","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1192"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p1193"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p1185","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1186"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1187"},"major_label_orientation":1,"major_label_policy":{"type":"object","name":"AllLabels","id":"p1188"}}}],"center":[{"type":"object","name":"Grid","id":"p1189","attributes":{"axis":{"id":"p1185"},"grid_line_color":null}},{"type":"object","name":"Grid","id":"p1194","attributes":{"dimension":1,"axis":{"id":"p1190"}}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p1215').textContent;
+              const render_items = [{"docid":"b7dc104c-9bd0-4879-8411-4982bed3b189","roots":{"p1173":"ce4ee689-892b-47b7-a01d-c8051d882de1"},"root_ids":["p1173"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
