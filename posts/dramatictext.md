@@ -1,4 +1,4 @@
-[Back](https://ycvogt.github.io/my-portfolio/)
+[Back](https://ycvogt.github.io/my_portfolio/)
 
 ## The Importance of Being Earnest: A Quantitative Text Analysis
 
@@ -177,4 +177,4 @@ Image: https://en.wikipedia.org/wiki/File:Algy-and-Jack-1895.jpg
 Wilde, Oscar. 1895. _The Importance of Being Earnest_. Published on: Project Gutenberg (https://www.gutenberg.org/cache/epub/844/pg844.txt, last accessed July 12th, 2024).
 
 ---
-[Back](https://ycvogt.github.io/my-portfolio/)
+[Back](https://ycvogt.github.io/my_portfolio/)
