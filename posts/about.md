@@ -1,4 +1,4 @@
-[Back](https://ycvogt.github.io/my-portfolio/)
+[Back](https://ycvogt.github.io/my_portfolio/)
 
 Hi, my name is Yvonne.
 
