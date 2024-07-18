@@ -19,7 +19,7 @@
 [Project 1: Vowel Charts](/posts/vowels.md)
 
 ### Other Projects
-[Project 1: Title](http://example.com/)
+#[Project 1: Title](http://example.com/)
 
 ---
 ---
