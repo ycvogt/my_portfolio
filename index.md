@@ -1,7 +1,7 @@
 [About Me](/posts/about.md)
 
 ---
-### Text Analysis with Python
+### Python Projects
 
 [Project 1: The Importance of Text Processing and Analysis](/posts/dramatictext.md)
 
@@ -15,7 +15,7 @@
 <!--<img src="images/dummy_thumbnail.jpg?raw=true"/>-->
 
 
-### Data Analysis with R
+### R Projects
 [Project 1: Vowel Charts](/posts/vowels.md)
 
 ### Other Projects
