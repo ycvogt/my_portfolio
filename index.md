@@ -16,7 +16,7 @@
 
 
 ### R Projects
-[Project 1: Vowel Charts](/posts/vowels.md)
+[Project 1: Phoible, Glottolog and WALS](/posts/vowels.md)
 
 ### Linguistics Projects
 [Project 1: Title](/posts/ling_project1.md)
