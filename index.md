@@ -7,7 +7,7 @@
 
 
 ---
-[Project 2: Title](/posts/project2.md)
+<!--[Project 2: Title](/posts/project2.md)-->
 <!--<img src="images/dummy_thumbnail.jpg?raw=true"/>-->
 
 ---
@@ -16,7 +16,7 @@
 
 
 ### R Projects
-[Project 1: Phoible, Glottolog and WALS](/posts/vowels.md)
+[Project 1: Phoible, Glottolog and WALS](/posts/phoible.md)
 
 ### Linguistics Projects
 [Project 1: Title](/posts/ling_project1.md)
