@@ -58,7 +58,11 @@ Another way to link the two sources is provided on the page of Phoible: https://
 
 Similarly, I explored how many languages have clicks:
 
+<iframe src="images/clicks_languages.html" width="100%" height="400px" style="border:none;"></iframe>
 
+...and tones:
+
+<iframe src="images/tonal_languages.html" width="100%" height="400px" style="border:none;"></iframe>
 
 References:
 
