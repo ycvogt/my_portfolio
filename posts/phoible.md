@@ -5,17 +5,14 @@
 ### Exploring Linguistic Databases in R
 
 Libraries: lingtypology, tidyverse
-Datasets: Phoible, Glottolog, APiCS
 
-In this project I will use two linguistic datasets (Phoible, Glottolog, APiCS), join and explore them to generate insight into cross-linguistic phonetic questions. 
+Datasets: Phoible, Glottolog
 
-Phoible is a detailed repository with phonetic inventories of 2186 distinct languages. While they point out that this is a convenience sample, it will still provide interesting tendencies. This repository does not list languages simply by name or ISO Code. Instead, it lists "doculects", i.e. how the phoneme inventory is described in a specific document. Therefore, multiple documents can describe one variety, there may be just one for another. 
+In this project I will use two linguistic datasets (Phoible, Glottolog), join and explore them to generate insight into cross-linguistic phonetic questions. Phoible is a detailed repository with phonetic inventories of 2186 distinct languages. While they point out that this is a convenience sample, it will still provide interesting tendencies. This repository does not list languages simply by name or ISO Code. Instead, it lists "doculects", i.e. how the phoneme inventory is described in a specific document. Therefore, multiple documents can describe one variety, there may be just one for another. 
 
-Phoible already includes some information from Glottolog, which is a large catalogue of langauges and their status and families. Glottolog also provides coordinates for mapping the languages and tracking feature distributions. Phoible, however, only provides information on language families and the Glottocode (i.e. same ID as used on Glottolog), but not coordinates. 
+Phoible already includes some information from Glottolog, which is a large catalogue of langauges and their status and families. Glottolog also provides coordinates for mapping the languages and tracking feature distributions. Therefore, I decided to work with both datasets and the library of lingtypology. This way, I could map the different phonetic features in Phoible together with the coordinates provided in Glottolog. It should be stressed that I specifically wanted to try it this way to challenge myself.
 
-Therefore, I decided to work with both datasets and the library of lingtypology. This way, I could map the different phonetic features in Phoible together with the coordinates provided in Glottolog.
-
-What a "language" is, is seemingly easy to identify in everyday contexts. However, socio-political aspects need to be considered aside from linguistic ones that can complicate the status of a variety quickly. This is especially true when dealing with varieties of diverse status that are also documented differently. For that reason, I stick with the term "variety" throughout this post.
+What a “language” is, is seemingly easy to identify in everyday contexts. However, socio-political aspects need to be considered aside from linguistic ones that can complicate the status of a variety quickly. This is especially true when dealing with varieties of diverse status that are also documented differently. For that reason, I stick with the term “variety” throughout this post.
 
 ```
 #loading phoible
@@ -31,6 +28,8 @@ df_glotto <- rename(df_glotto, Glottocode = glottocode)
 view(as_tibble(df_glotto))
 ```
 
+Next, I filtered the features of interest and saved them in a tibble. Grouping by _Glottocode_ rather than _LanguageName_, _ISO_ Codes or _InventoryID_ (in Phoible) was tricky. The one variable that both datasets shared was the _Glottocode_. Another way to link the two sources is provided on the page of Phoible: https://phoible.org/faq#integrating-geographic-information. Feel free to explore by zooming in, and clicking on the data points for the language names.
+
 ```
 #filtering out the features of interest
 specific_vowel <- filter(tibble_phoible, GlyphID==c("0079","0079+02D0"))%>% group_by(Glottocode)
@@ -40,8 +39,12 @@ view(specific_vowel)
 df_result <-right_join(df_glotto,specific_vowel, by="Glottocode")
 tibble_results <- as_tibble(df_result)
 view(tibble_results)
+```
 
-#mappling the features and languages on world map
+I decided to use the GlyphID which is the ID given to the phonemes as it made filtering easier. IPA symbols which are used to represent phonemes would have been more problematic. In order to still render IPA symbols, I just used the column _Phoneme_ instad of _GlyphID_ as they represented the same item in the final filtered dataset. 
+
+```
+#mapping the features and languages on world map
 map.feature(tibble_results$name,
             features = tibble_results$Phoneme,
             latitude = tibble_results$latitude,
@@ -49,20 +52,27 @@ map.feature(tibble_results$name,
             title = "vowels")
 ```
 
-Grouping by _Glottocode_ rather than _Language Name_, ISO Codes or Inventory ID (in Phoible) was tricky. The one variable that both datasets shared was the Glottocode.
-I decided to use the GlyphID which is the ID given to the phonemes as it made filtering easier. IPA symbols which are used to represent phonemes would have been more problematic. In order to still render IPA symbols, I just used the column _Phoneme_ instad of _GlyphID_ as they represented the same item in the final filtered dataset. 
-
-Another way to link the two sources is provided on the page of Phoible: https://phoible.org/faq#integrating-geographic-information.  
-
 <iframe src="images/distribution_y.html" width="100%" height="400px" style="border:none;"></iframe>
 
 Similarly, I explored how many languages have clicks:
 
 <iframe src="images/clicks_languages.html" width="100%" height="400px" style="border:none;"></iframe>
 
-...and tones:
+```
+click <- filter(tibble_phoible, click=="+")%>% count(LanguageName, sort=TRUE)
+view(click)
+nrow(click) #31
+```
+
+According to Phoible, 21 languages have clicks. The varieties with the most clicks are: !Xóõ (n=45), !Xun (n=40), !XU (n=37), NAMA (n=20), Xhosa (n=18).
+
+We can repeat the same analysis for tones:
 
 <iframe src="images/tonal_languages.html" width="100%" height="400px" style="border:none;"></iframe>
+
+Based on these datasets, varieties with clicks can only be found in Africa, while tones are present in many varieties in Africa, Asia and North America.
+
+The varieties with the most tones are: Bafut (n=10), Buli (n=10), Ticuna (n=9), Babungo (n=9) and Nizaa (n=9).
 
 References:
 
