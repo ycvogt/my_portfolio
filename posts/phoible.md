@@ -64,7 +64,7 @@ Similarly, I explored how many varieties have clicks:
 ```
 click <- filter(tibble_phoible, click=="+")%>% count(LanguageName, sort=TRUE)
 view(click)
-nrow(click) #31
+nrow(click) #11
 ```
 
 According to Phoible, 21 varieties have clicks. The varieties with the most clicks are: !Xóõ (n=45), !Xun (n=40), !XU (n=37), NAMA (n=20), Xhosa (n=18).
