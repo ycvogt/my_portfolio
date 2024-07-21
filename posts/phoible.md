@@ -7,7 +7,7 @@
 Libraries: lingtypology, tidyverse
 Datasets: Phoible, Glottolog, APiCS
 
-In this project I will use two linguistic datasets (Phoible, Glottolog), join and explore them to generate insight into cross-linguistic phonetic questions. 
+In this project I will use two linguistic datasets (Phoible, Glottolog, APiCS), join and explore them to generate insight into cross-linguistic phonetic questions. 
 
 Phoible is a detailed repository with phonetic inventories of 2186 distinct languages. While they point out that this is a convenience sample, it will still provide interesting tendencies. This repository does not list languages simply by name or ISO Code. Instead, it lists "doculects", i.e. how the phoneme inventory is described in a specific document. Therefore, multiple documents can describe one variety, there may be just one for another. 
 
