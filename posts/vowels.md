@@ -5,7 +5,7 @@
 ### Exploring Linguistic Databases in R
 
 Libraries: lingtypology, tidyverse
-Datasets: Phoible, Glottolog
+Datasets: Phoible, Glottolog, APiCS
 
 In this project I will use two linguistic datasets (Phoible, Glottolog), join and explore them to generate insight into cross-linguistic phonetic questions. 
 
@@ -55,13 +55,15 @@ I decided to use the GlyphID which is the ID given to the phonemes as it made fi
 
 Another way to link the two sources is provided on the page of Phoible: https://phoible.org/faq#integrating-geographic-information.  
 
-<iframe src="images/vowels_longshorty.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/distribution_y.html" width="100%" height="400px" style="border:none;"></iframe>
 
 
 
 References:
 
-Hammarström, Harald & Forkel, Robert & Haspelmath, Martin & Bank, Sebastian. 2024. _Glottolog 5.0_. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://doi.org/10.5281/zenodo.10804357 (Available online at http://glottolog.org, Accessed on 2024-07-20.)
+Hammarström, Harald & Forkel, Robert & Haspelmath, Martin & Bank, Sebastian (eds.) 2024. _Glottolog 5.0_. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://doi.org/10.5281/zenodo.10804357 (Available online at http://glottolog.org, Accessed on 2024-07-20.)
+
+Michaelis, Susanne Maria & Maurer, Philippe & Haspelmath, Martin & Huber, Magnus (eds.) 2013. _Atlas of Pidgin and Creole Language Structures Online_. Leipzig: Max Planck Institute for Evolutionary Anthropology. (Available online at http://apics-online.info, Accessed on 2024-07-21.)
 
 Moran, Steven & McCloy, Daniel (eds.) 2019. _PHOIBLE 2.0_. Jena: Max Planck Institute for the Science of Human History. (Available online at http://phoible.org, Accessed on 2024-07-20.)
 
