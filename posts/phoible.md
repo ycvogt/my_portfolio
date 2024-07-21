@@ -8,11 +8,11 @@ Libraries: lingtypology, tidyverse
 
 Datasets: Phoible, Glottolog
 
-In this project I will use two linguistic datasets (Phoible, Glottolog), join and explore them to generate insight into cross-linguistic phonetic questions. Phoible is a detailed repository with phonetic inventories of 2186 distinct languages. While they point out that this is a convenience sample, it will still provide interesting tendencies. This repository does not list languages simply by name or ISO Code. Instead, it lists "doculects", i.e. how the phoneme inventory is described in a specific document. Therefore, multiple documents can describe one variety, there may be just one for another. 
+In this project I will use two linguistic datasets (_Phoible_, _Glottolog_), join and explore them to generate insight into cross-linguistic phonetic questions. _Phoible_ is a detailed repository with phonetic inventories of 2186 distinct languages. While they point out that this is a convenience sample, it will still provide interesting tendencies. This repository does not list languages simply by name or ISO Code. Instead, it lists "doculects", i.e. how the phoneme inventory is described in a specific document. Therefore, multiple documents can describe one variety, there may be just one for another. 
 
 What a “language” is, is seemingly easy to identify in everyday contexts. However, socio-political aspects need to be considered aside from linguistic ones that can complicate the status of a variety quickly. This is especially true when dealing with varieties of diverse status that are also documented differently. For that reason, I stick with the term “variety” throughout this post.
 
-Phoible already includes some information from Glottolog, which is a large catalogue of langauges and their status and families. Glottolog also provides coordinates for mapping the languages and tracking feature distributions. Therefore, I decided to work with both datasets and the library of lingtypology. This way, I could map the different phonetic features in Phoible together with the coordinates provided in Glottolog. It should be stressed that I specifically wanted to try it this way to challenge myself.
+_Phoible_ already includes some information from _Glottolog_, which is a large catalogue of langauges and their status and families. _Glottolog_ also provides coordinates for mapping the languages and tracking feature distributions. Therefore, I decided to work with both datasets and the library of _lingtypology_. This way, I could map the different phonetic features in Phoible together with the coordinates provided in _Glottolog_. It should be stressed that I specifically wanted to try it this way to challenge myself.
 
 ```
 #loading phoible
@@ -41,7 +41,7 @@ tibble_results <- as_tibble(df_result)
 view(tibble_results)
 ```
 
-I decided to use the GlyphID which is the ID given to the phonemes as it made filtering easier. IPA symbols which are used to represent phonemes would have been more problematic. In order to still render IPA symbols, I just used the column _Phoneme_ instad of _GlyphID_ as they represented the same item in the final filtered dataset. 
+I decided to use the _GlyphID_ which is the ID given to the phonemes as it made filtering easier. IPA symbols which are used to represent phonemes would have been more problematic. In order to still render IPA symbols, I just used the column _Phoneme_ instad of _GlyphID_ as they represented the same item in the final filtered dataset. 
 
 ```
 #mapping the features and languages on world map
@@ -54,7 +54,8 @@ map.feature(tibble_results$name,
 
 <iframe src="images/distribution_y.html" width="100%" height="400px" style="border:none;"></iframe>
 
-Similarly, I explored how many languages have clicks:
+
+Similarly, I explored how many varieties have clicks:
 
 <iframe src="images/clicks_languages.html" width="100%" height="400px" style="border:none;"></iframe>
 
@@ -64,7 +65,7 @@ view(click)
 nrow(click) #31
 ```
 
-According to Phoible, 21 languages have clicks. The varieties with the most clicks are: !Xóõ (n=45), !Xun (n=40), !XU (n=37), NAMA (n=20), Xhosa (n=18).
+According to Phoible, 21 varieties have clicks. The varieties with the most clicks are: !Xóõ (n=45), !Xun (n=40), !XU (n=37), NAMA (n=20), Xhosa (n=18).
 
 We can repeat the same analysis for tones:
 
@@ -72,7 +73,7 @@ We can repeat the same analysis for tones:
 
 Based on these datasets, varieties with clicks can only be found in Africa, while tones are present in many varieties in Africa, Asia and North America.
 
-The varieties with the most tones are: Bafut (n=10), Buli (n=10), Ticuna (n=9), Babungo (n=9) and Nizaa (n=9).
+Tones are more frequent (n=635 varieties). The varieties with the most distinct tones are: Bafut (n=10), Buli (n=10), Ticuna (n=9), Babungo (n=9) and Nizaa (n=9).
 
 References:
 
