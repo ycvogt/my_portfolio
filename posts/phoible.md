@@ -28,7 +28,7 @@ df_glotto <- rename(df_glotto, Glottocode = glottocode)
 view(as_tibble(df_glotto))
 ```
 
-Next, I filtered the features of interest and saved them in a tibble. Grouping by _Glottocode_ rather than _LanguageName_, _ISO_ Codes or _InventoryID_ (in Phoible) was tricky. The one variable that both datasets shared was the _Glottocode_. Another way to link the two sources is provided on the page of Phoible: https://phoible.org/faq#integrating-geographic-information. 
+Next, I filtered the features of interest and saved them in a tibble. Grouping by _Glottocode_ rather than _LanguageName_, _ISO_ Codes or _InventoryID_ (in Phoible) was tricky. The one variable that both datasets shared was the _Glottocode_. Another way to link the two sources is provided on the website of Phoible: https://phoible.org/faq#integrating-geographic-information. 
 
 ```
 #filtering out the features of interest
