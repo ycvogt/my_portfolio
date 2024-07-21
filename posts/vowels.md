@@ -35,7 +35,6 @@ view(as_tibble(df_glotto))
 #filtering out the features of interest
 specific_vowel <- filter(tibble_phoible, GlyphID==c("0079","0079+02D0"))%>% group_by(Glottocode)
 view(specific_vowel)
-nrow(specific_vowel) #175
 
 #joining the two datasets at the key "Glottocode"
 df_result <-right_join(df_glotto,specific_vowel, by="Glottocode")
@@ -56,6 +55,8 @@ I decided to use the GlyphID which is the ID given to the phonemes as it made fi
 Another way to link the two sources is provided on the page of Phoible: https://phoible.org/faq#integrating-geographic-information.  
 
 <iframe src="images/distribution_y.html" width="100%" height="400px" style="border:none;"></iframe>
+
+Similarly, I explored how many languages have clicks:
 
 
 
