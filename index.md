@@ -16,7 +16,7 @@
 
 
 ### R Projects
-[Project 1: Phoible, Glottolog and WALS](/posts/phoible.md)
+[Project 1: Phoible, Glottolog and lingtypology](/posts/phoible.md)
 
 ### Linguistics Projects
 [Project 1: Title](/posts/ling_project1.md)
