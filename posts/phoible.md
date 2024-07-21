@@ -10,9 +10,9 @@ Datasets: Phoible, Glottolog
 
 In this project I will use two linguistic datasets (Phoible, Glottolog), join and explore them to generate insight into cross-linguistic phonetic questions. Phoible is a detailed repository with phonetic inventories of 2186 distinct languages. While they point out that this is a convenience sample, it will still provide interesting tendencies. This repository does not list languages simply by name or ISO Code. Instead, it lists "doculects", i.e. how the phoneme inventory is described in a specific document. Therefore, multiple documents can describe one variety, there may be just one for another. 
 
-Phoible already includes some information from Glottolog, which is a large catalogue of langauges and their status and families. Glottolog also provides coordinates for mapping the languages and tracking feature distributions. Therefore, I decided to work with both datasets and the library of lingtypology. This way, I could map the different phonetic features in Phoible together with the coordinates provided in Glottolog. It should be stressed that I specifically wanted to try it this way to challenge myself.
-
 What a “language” is, is seemingly easy to identify in everyday contexts. However, socio-political aspects need to be considered aside from linguistic ones that can complicate the status of a variety quickly. This is especially true when dealing with varieties of diverse status that are also documented differently. For that reason, I stick with the term “variety” throughout this post.
+
+Phoible already includes some information from Glottolog, which is a large catalogue of langauges and their status and families. Glottolog also provides coordinates for mapping the languages and tracking feature distributions. Therefore, I decided to work with both datasets and the library of lingtypology. This way, I could map the different phonetic features in Phoible together with the coordinates provided in Glottolog. It should be stressed that I specifically wanted to try it this way to challenge myself.
 
 ```
 #loading phoible
