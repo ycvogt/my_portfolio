@@ -3,6 +3,7 @@
 # Netflix Series and Movies Analysis
 
 Dataset: The dataset was downloaded from Kaggle[1].
+
 Libraries: pandas, numpy, matplotlib, bokeh, seaborn
 
 
@@ -20,18 +21,28 @@ The data set looks like this:
 Next, we get an idea of its size:
 
 
-```df.size #number of datapoints```
+Number of datapoints:
+```
+df.size
+```
+
+Number of rows, columns: 
+```
+df.shape
+```
+
+Column names: 
+```
+df.columns
+```
 
 
-```df.shape #number of rows, cols```
+This dataset has 63866 datapoints, 5806 rows and 11 columns with the names: ```title```, ```type```, ```release_year```, ```age_certification```, ```runtime```, ```genres```, ```production_countries```, ```seasons```, ```imdb_id```, ```imdb_score```, ```imdb_votes```. 
 
-
-```df.columns #column names```
-
-
-This dataset has 63866 datapoints, 5806 rows and 11 columns with the names: ```title```, ```type```, ```release_year```, ```age_certification```, ```runtime```, ```genres```, ```production_countries```, ```seasons```, ```imdb_id```, ```imdb_score```, ```imdb_votes```. Subsequently, we want to check the datapoints themselves, i.e. are there any missing values?
-
-```df.isnull().sum() / len(df)```
+Subsequently, we want to check the datapoints themselves, i.e. are there any missing values? We can do this with: 
+``` 
+df.isnull().sum() / len(df)
+```
 
 <img src="images/results_NA.PNG" width="300"/>
 
