@@ -71,25 +71,25 @@ view(by_tone_phoneme) #most frequent tone /˦/
 
 <ol>
 <li>There are indeed 3020 varieties/doculects documented.</li>
-<li>The results:
+<li>The results:<br></br>
 <table>
 <thead>
 <tr>
-<th align="left">Segment Type</th>
+<th align="center">Segment Type</th>
 <th align="right">Count</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">consonant</td>
+<td align="center">consonant</td>
 <td align="right">72282</td>
 </tr>
 <tr>
-<td align="left">vowel</td>
+<td align="center">vowel</td>
 <td align="right">31052</td>
 </tr>
 <tr>
-<td align="left">tone</td>
+<td align="center">tone</td>
 <td align="right">2150</td>
 </tr>
 </tbody>
