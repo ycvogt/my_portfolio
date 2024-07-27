@@ -5,7 +5,8 @@
 Dataset: The dataset was downloaded from Kaggle[1].
 Libraries: pandas, numpy, matplotlib, bokeh, seaborn
 
-1. Setup and preliminary exloration
+
+# Setup and preliminary exloration
 First, we load the dataset and the libraries. Next, we read in the file as a dataframe.
 
 ```
@@ -19,7 +20,7 @@ df.isnull().sum() #show sum of missing values
 df.isnull().sum() / len(df)
 ```
 
-2. Cleaning and preprocessing
+# Cleaning and preprocessing
 
 ```
 columns_remove = ["age_certification", "seasons", "imdb_id", "imdb_votes"]
@@ -32,7 +33,7 @@ clean_df = pcountries_filtered.loc[pcountries_filtered["title"] != np.NaN, ["tit
 clean_df
 ```
 
-3. Analysis
+# Analysis
 
 1. Which year has the most titles?
 ```
@@ -47,13 +48,7 @@ import plotly.express as px
 fig = px.violin(clean_df, x="release_year")
 fig.show()
 ```
-```
-fig = px.violin(clean_df, x="type", y="release_year")
-fig.show()
-```
-```
-sns.countplot(x='type', data=clean_df)
-```
+
 
 References
 
