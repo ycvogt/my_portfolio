@@ -5,9 +5,8 @@
 
 [Project 1: The Importance of Text Processing and Analysis](/posts/dramatictext.md)
 
-
 ---
-<!--[Project 2: Title](/posts/project2.md)-->
+[Project 2: Title](/posts/movies.md)
 <!--<img src="images/dummy_thumbnail.jpg?raw=true"/>-->
 
 ---
@@ -19,7 +18,5 @@
 [Project 1: Phoible, Glottolog and lingtypology](/posts/phoible.md)
 
 ### Linguistics Projects
-[Project 1: Title](/posts/ling_project1.md)
-
 ---
 ---
