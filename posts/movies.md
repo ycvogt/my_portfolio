@@ -19,12 +19,15 @@ The data set looks like this:
 Next, we get an idea of its size:
 
 ```df.size #get number of datapoints```
+
 ```df.shape #get number of (rows, cols) #(5806, 11)```
+
 ```df.columns #get column names```
 
 This dataset has 63866 datapoints, 5806 rows and 11 columns with the names: 'title', 'type', 'release_year', 'age_certification', 'runtime', 'genres', 'production_countries', 'seasons', 'imdb_id', 'imdb_score', 'imdb_votes'. Subsequently, we want to check the datapoints themselves, i.e. are there any missing values?
 
 ```df.isnull().sum() #show sum of missing values```
+
 ```df.isnull().sum() / len(df)```
 
 
