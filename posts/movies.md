@@ -1,12 +1,12 @@
 [Back](https://ycvogt.github.io/my_portfolio/)
 
-## Netflix Series and Movies Analysis ##
+# Netflix Series and Movies Analysis
 
 Dataset: The dataset was downloaded from Kaggle[1].
 Libraries: pandas, numpy, matplotlib, bokeh, seaborn
 
 
-# Setup and preliminary exloration
+## Setup and preliminary exloration
 First, we load the dataset and the libraries. Next, we read in the file as a dataframe.
 
 ```
@@ -20,7 +20,7 @@ df.isnull().sum() #show sum of missing values
 df.isnull().sum() / len(df)
 ```
 
-# Cleaning and preprocessing
+## Cleaning and preprocessing
 
 ```
 columns_remove = ["age_certification", "seasons", "imdb_id", "imdb_votes"]
@@ -33,7 +33,7 @@ clean_df = pcountries_filtered.loc[pcountries_filtered["title"] != np.NaN, ["tit
 clean_df
 ```
 
-# Analysis
+## Analysis
 
 1. Which year has the most titles?
 ```
