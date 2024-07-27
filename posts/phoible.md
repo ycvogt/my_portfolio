@@ -63,7 +63,8 @@ by_vowel_phoneme <- filter(tibble_phoible, SegmentClass=="vowel") %>% group_by(P
 view(by_vowel_phoneme) #most frequent vowel is /i/
 by_cons_phoneme <- filter(tibble_phoible, SegmentClass=="consonant")%>% group_by(Phoneme)%>% tally(sort=TRUE)
 view(by_cons_phoneme) #most frequent consonant is /m/
-/˦/
+by_tone_phoneme <- filter(tibble_phoible, SegmentClass=="tone")%>% group_by(Phoneme)%>% tally(sort=TRUE)
+view(by_tone_phoneme) #most frequent tone /˦/
 ```
 
 1) There are indeed 3020 varieties/doculects documented.
