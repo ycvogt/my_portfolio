@@ -42,14 +42,12 @@ view(tibble_results)
 ```
 
 I wanted to start with some simple analyses:
-
-1) Check if there are indeed as many varieties in the dataset as they say.
-
-2) How many different segment types (consonants, vowels, tones) are there?
-   
-3) Which variety has the smallest/largest phoneme inventory?
-   
-4) Which vowel, consonant and tone are most frequently used among all languages?
+<ol>
+<li>Check if there are indeed as many varieties in the dataset as they say.</li>
+<li>How many different segment types (consonants, vowels, tones) are there?</li>
+<li>Which variety has the smallest/largest phoneme inventory?</li>
+<li>Which vowel, consonant and tone are most frequently used among all languages?</li>
+</ol>
 
 ```
 number_langs <- nrow(by_lang) #check number of varieties/doculects
