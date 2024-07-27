@@ -69,19 +69,31 @@ by_tone_phoneme <- filter(tibble_phoible, SegmentClass=="tone")%>% group_by(Phon
 view(by_tone_phoneme) #most frequent tone /˦/
 ```
 
-1) There are indeed 3020 varieties/doculects documented.
-   
-2) The results:
-   | Segment Type  |    Count|
-   | ------------- |---------| 
-   | consonant     |    72282|
-   | vowel         |    31052|
-   | tone          |     2150|
-
-3) The variety/doculect with the most phonemes is !Xóõ (East Taa) with 161 phonemes. The varieties/doculects with the fewest phonemes are Pirahã and Rotokas with only 11 phonemes each!
-   
-4) The most frequent vowel is /i/ (present in 2779 varieties), the most frequent consonant is /m/ (present in 2915 varieties) and the most frequent tone is a high tone /˦/ (present in 552 varieties).
-
+<ol>
+<li>There are indeed 3020 varieties/doculects documented.</li>
+<li>The results:
+<table>
+<thead>
+<tr>
+<th align="left">Segment Type</th>
+<th align="right">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">consonant</td>
+<td align="right">72282</td>
+<td align="left">vowel</td>
+<td align="right">31052</td>
+<td align="left">tone</td>
+<td align="right">2150</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>The variety/doculect with the most phonemes is !Xóõ (East Taa) with 161 phonemes. The varieties/doculects with the fewest phonemes are Pirahã and Rotokas with only 11 phonemes each!</li>
+<li>The most frequent vowel is /i/ (present in 2779 varieties), the most frequent consonant is /m/ (present in 2915 varieties) and the most frequent tone is a high tone /˦/ (present in 552 varieties).</li>
+</ol>
 
 Next, I decided to use the _GlyphID_ which is the ID given to the phonemes as it made filtering easier. IPA symbols which are used to represent phonemes would have been more problematic. In order to still render IPA symbols, I just used the column _Phoneme_ instad of _GlyphID_ as they represented the same item in the final filtered dataset. 
 
