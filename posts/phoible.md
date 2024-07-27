@@ -28,7 +28,7 @@ df_glotto <- rename(df_glotto, Glottocode = glottocode)
 view(as_tibble(df_glotto))
 ```
 
-Next, I filtered the features of interest and saved them in a tibble. Grouping by _Glottocode_ rather than _LanguageName_, _ISO_ Codes or _InventoryID_ (in Phoible) was tricky. The one variable that both datasets shared was the _Glottocode_. Another way to link the two sources is provided on the website of Phoible: https://phoible.org/faq#integrating-geographic-information. 
+Next, I filtered the features of interest and saved them in a tibble. Grouping by _Glottocode_ rather than _LanguageName_, _ISO_ Codes or _InventoryID_ (in Phoible) was tricky. The one variable that both datasets shared was the _Glottocode_. Another way to link the two sources is provided on the website of [Phoible](https://phoible.org/faq#integrating-geographic-information). 
 
 ```
 #filtering out the features of interest
@@ -138,9 +138,9 @@ Tones are more frequent (n=635 varieties). The varieties with the most distinct 
 
 References:
 
-[1]Moran, Steven & McCloy, Daniel (eds.) 2019. _PHOIBLE 2.0_. Jena: Max Planck Institute for the Science of Human History. (Available online at http://phoible.org, Accessed on 2024-07-20.)
+[1]Moran, Steven & McCloy, Daniel (eds.) 2019. _PHOIBLE 2.0_. Jena: Max Planck Institute for the Science of Human History. (Available online at <http://phoible.org>, Accessed on 2024-07-20.)
 
-[2]Hammarström, Harald & Forkel, Robert & Haspelmath, Martin & Bank, Sebastian (eds.) 2024. _Glottolog 5.0_. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://doi.org/10.5281/zenodo.10804357 (Available online at http://glottolog.org, Accessed on 2024-07-20.)
+[2]Hammarström, Harald & Forkel, Robert & Haspelmath, Martin & Bank, Sebastian (eds.) 2024. _Glottolog 5.0_. Leipzig: Max Planck Institute for Evolutionary Anthropology. <https://doi.org/10.5281/zenodo.10804357> (Available online at <http://glottolog.org>, Accessed on 2024-07-20.)
 
 [3]Moroz G (2017). _lingtypology: easy mapping for Linguistic Typology_.<https://CRAN.R-project.org/package=lingtypology>.
 
