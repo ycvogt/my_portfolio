@@ -31,7 +31,8 @@ This dataset has 63866 datapoints, 5806 rows and 11 columns with the names: 'tit
 
 ```df.isnull().sum() / len(df)
 ```
-<img src="images/results_NA.PNG">
+
+<img src="images/results_NA.PNG"/>
 
 ## Cleaning and preprocessing
 
@@ -46,6 +47,7 @@ pcountries_filtered = imdb_score_filtered.loc[imdb_score_filtered["production_co
 clean_df = pcountries_filtered.loc[pcountries_filtered["title"] != np.NaN, ["title", "type", "release_year", "runtime", "genres", "production_countries", "imdb_score"]]#0 in title, and [] in genres, thus same length
 clean_df.size #get new number after cleaning
 ```
+
 After cleaning and preprocessing, we have a reduced set of 35791 datapoints and the following dataset:
 <iframe src="images/table2_movies.html" width="100%" height="400px" style="border:none;"></iframe>
 
@@ -58,7 +60,9 @@ Which year has the most titles?
 ```
 sns.histplot(x='release_year', data=clean_df)
 ```
-<img src="images/image1_movies.png">
+
+<img src="images/image1_movies.png"/>
+
 ```
 import plotly.express as px
 fig = px.violin(clean_df, x="release_year")
