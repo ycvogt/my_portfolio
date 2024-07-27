@@ -10,7 +10,7 @@ Datasets: Phoible, Glottolog
 
 In this project I will use two linguistic datasets (_Phoible_, _Glottolog_), join and explore them to generate insight into cross-linguistic phonetic questions. _Phoible_ is a detailed repository with phonetic inventories of 2186 distinct languages. While they point out that this is a convenience sample, it will still provide interesting tendencies. This repository does not list languages simply by name or ISO Code. Instead, it lists "doculects", i.e. how the phoneme inventory is described in a specific document. Therefore, multiple documents can describe one variety, there may be just one for another. 
 
-What a “language” is, is seemingly easy to identify in everyday contexts. However, socio-political aspects need to be considered aside from linguistic ones that can complicate the status of a variety quickly. This is especially true when dealing with varieties of diverse status that are also documented differently. For that reason, I stick with the term “variety” throughout this post.
+What a “language” is might seem easy to identify in everyday contexts. However, socio-political aspects need to be considered aside from linguistic ones and this can complicate the status of a variety quickly. This is especially true when dealing with varieties of diverse status that are also documented differently. For that reason, I stick with the term “variety” throughout this post.
 
 _Phoible_ already includes some information from _Glottolog_, which is a large catalogue of langauges and their status and families. _Glottolog_ also provides coordinates for mapping the languages and tracking feature distributions. Therefore, I decided to work with both datasets and the library of _lingtypology_. This way, I could map the different phonetic features in Phoible together with the coordinates provided in _Glottolog_. It should be stressed that I specifically wanted to try it this way to challenge myself.
 
@@ -41,7 +41,44 @@ tibble_results <- as_tibble(df_result)
 view(tibble_results)
 ```
 
-I decided to use the _GlyphID_ which is the ID given to the phonemes as it made filtering easier. IPA symbols which are used to represent phonemes would have been more problematic. In order to still render IPA symbols, I just used the column _Phoneme_ instad of _GlyphID_ as they represented the same item in the final filtered dataset. 
+I wanted to start with some simple analyses:
+1) Check if there are indeed varieties as they say.
+2) How many different segment types (consonants, vowels, tones) are there?
+3) Which variety has the smalles/largest phoneme inventory?
+4) Which vowel, consonant and tone are most frequently used among all languages?
+
+```
+number_langs <- nrow(by_lang) #check number of varieties/doculects
+print(number_langs) #3020 correct!
+
+by_segmentclass <- tibble_phoible %>% group_by(SegmentClass)%>% tally(sort=TRUE)
+view(by_segmentclass) #segment types and their counts
+
+by_lang <- tibble_phoible %>% group_by(InventoryID)%>% tally(sort=TRUE)
+view(by_lang) #most
+by_lang_asc <- arrange(by_lang, n)
+view(by_lang_asc) #least
+
+by_vowel_phoneme <- filter(tibble_phoible, SegmentClass=="vowel") %>% group_by(Phoneme)%>% tally(sort=TRUE)
+view(by_vowel_phoneme) #most frequent vowel is /i/
+by_cons_phoneme <- filter(tibble_phoible, SegmentClass=="consonant")%>% group_by(Phoneme)%>% tally(sort=TRUE)
+view(by_cons_phoneme) #most frequent consonant is /m/
+/˦/
+```
+
+1) There are indeed 3020 varieties/doculects documented.
+2) The results:
+   | Segment Type  |    Count|
+   | ------------- |---------| 
+   | consonant     |    72282|
+   | vowel         |    31052|
+   | tone          |     2150|
+
+4) The variety/doculect with the most phonemes is !Xóõ (East Taa) with 161 phonemes. The varieties/doculects with the fewest phonemes are Pirahã and Rotokas with only 11 phonemes each!
+5) The most frequent vowel is /i/ (present in 2779 varieties), the most frequent consonant is /m/ (present in 2915 varieties) and the most frequent tone is a high tone /˦/ (present in 552 varieties).
+
+
+Next, I decided to use the _GlyphID_ which is the ID given to the phonemes as it made filtering easier. IPA symbols which are used to represent phonemes would have been more problematic. In order to still render IPA symbols, I just used the column _Phoneme_ instad of _GlyphID_ as they represented the same item in the final filtered dataset. 
 
 ```
 #mapping the features and languages on world map
@@ -76,6 +113,7 @@ We can repeat the same analysis for tones:
 Based on these datasets, varieties with clicks can only be found in Africa, while tones are present in many varieties in Africa, Asia and North America.
 
 Tones are more frequent (n=635 varieties). The varieties with the most distinct tones are: Bafut (n=10), Buli (n=10), Ticuna (n=9), Babungo (n=9) and Nizaa (n=9).
+
 
 References:
 
