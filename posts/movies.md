@@ -32,7 +32,7 @@ This dataset has 63866 datapoints, 5806 rows and 11 columns with the names: 'tit
 ```df.isnull().sum() / len(df)
 ```
 
-<img src="images/results_NA.PNG"/>
+<img src="images/results_NA.PNG" width="100"/>
 
 ## Cleaning and preprocessing
 
