@@ -12,6 +12,7 @@ First, we load the dataset and the libraries. Next, we read in the file as a dat
 ```
 df = pd.read_csv('imdb_movies_shows.csv', encoding="UTF-8")
 ```
+
 The data set looks like this:
 
 <iframe src="images/table1_movies.html" width="100%" height="400px" style="border:none;"></iframe>
@@ -27,7 +28,7 @@ Next, we get an idea of its size:
 ```df.columns #get column names
 ```
 
-This dataset has 63866 datapoints, 5806 rows and 11 columns with the names: 'title', 'type', 'release_year', 'age_certification', 'runtime', 'genres', 'production_countries', 'seasons', 'imdb_id', 'imdb_score', 'imdb_votes'. Subsequently, we want to check the datapoints themselves, i.e. are there any missing values?
+This dataset has 63866 datapoints, 5806 rows and 11 columns with the names: ```title```, ```type```, ```release_year```, ```age_certification```, ```runtime```, ```genres```, ```production_countries```, ```seasons```, ```imdb_id```, ```imdb_score```, ```imdb_votes```. Subsequently, we want to check the datapoints themselves, i.e. are there any missing values?
 
 ```df.isnull().sum() / len(df)
 ```
@@ -49,6 +50,7 @@ clean_df.size #get new number after cleaning
 ```
 
 After cleaning and preprocessing, we have a reduced set of 35791 datapoints and the following dataset:
+
 <iframe src="images/table2_movies.html" width="100%" height="400px" style="border:none;"></iframe>
 
 
