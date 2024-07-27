@@ -5,18 +5,17 @@
 
 [Project 1: The Importance of Text Processing and Analysis](/posts/dramatictext.md)
 
----
 [Project 2: Netflix Shows and Movies Analysis](/posts/movies.md)
 <!--<img src="images/dummy_thumbnail.jpg?raw=true"/>-->
 
----
 <!--[Project 3 Title](http://example.com/)-->
 <!--<img src="images/dummy_thumbnail.jpg?raw=true"/>-->
 
-
+---
 ### R Projects
 [Project 1: Phoible, Glottolog and lingtypology](/posts/phoible.md)
 
-### Linguistics Projects
 ---
+### Linguistics Projects
+
 ---
