@@ -20,7 +20,7 @@ Next, we get an idea of its size:
 
 ```df.size #get number of datapoints```
 
-```df.shape #get number of (rows, cols) #(5806, 11)```
+```df.shape #get number of rows, cols```
 
 ```df.columns #get column names```
 
