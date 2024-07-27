@@ -18,18 +18,20 @@ The data set looks like this:
 
 Next, we get an idea of its size:
 
-```df.size #get number of datapoints```
+```df.size #get number of datapoints
+```
 
-```df.shape #get number of rows, cols```
+```df.shape #get number of rows, cols
+```
 
-```df.columns #get column names```
+```df.columns #get column names
+```
 
 This dataset has 63866 datapoints, 5806 rows and 11 columns with the names: 'title', 'type', 'release_year', 'age_certification', 'runtime', 'genres', 'production_countries', 'seasons', 'imdb_id', 'imdb_score', 'imdb_votes'. Subsequently, we want to check the datapoints themselves, i.e. are there any missing values?
 
-```df.isnull().sum() #show sum of missing values```
-
-```df.isnull().sum() / len(df)```
-
+```df.isnull().sum() / len(df)
+```
+<img src="images/results_NA.PNG">
 
 ## Cleaning and preprocessing
 
@@ -56,7 +58,7 @@ Which year has the most titles?
 ```
 sns.histplot(x='release_year', data=clean_df)
 ```
-<img src="images/image1_movies.png"></>
+<img src="images/image1_movies.png">
 ```
 import plotly.express as px
 fig = px.violin(clean_df, x="release_year")
