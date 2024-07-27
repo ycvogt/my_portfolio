@@ -19,16 +19,20 @@ The data set looks like this:
 
 Next, we get an idea of its size:
 
+
 ```df.size #number of datapoints```
+
 
 ```df.shape #number of rows, cols```
 
+
 ```df.columns #column names```
+
 
 This dataset has 63866 datapoints, 5806 rows and 11 columns with the names: ```title```, ```type```, ```release_year```, ```age_certification```, ```runtime```, ```genres```, ```production_countries```, ```seasons```, ```imdb_id```, ```imdb_score```, ```imdb_votes```. Subsequently, we want to check the datapoints themselves, i.e. are there any missing values?
 
-```df.isnull().sum() / len(df)
-```
+```df.isnull().sum() / len(df)```
+
 <img src="images/results_NA.PNG" width="300"/>
 
 There are many missing values in ```age_certification``` and ```seasons```, and a few in ```title```,```imdb_id```, ```imdb_score```, and ```imdb_votes```.
@@ -36,6 +40,7 @@ There are many missing values in ```age_certification``` and ```seasons```, and 
 ## Cleaning and preprocessing
 
 Cleaning and preprocessing involves removing columns that I will not consider for further analysis, and subsetting data such that missing values are removed. 
+
 ```
 #remove columns that are not relevant
 columns_remove = ["age_certification", "seasons", "imdb_id", "imdb_votes"]
@@ -74,6 +79,7 @@ fig.show()
 While there are many datapoints, there are not many movies and shows that are older than 2010. Most movies and shows in this dataset are recent. 
 
 A breakdown can be created thus:
+
 ```
 clean_df['release_year'].value_counts(normalize=True)
 ```
