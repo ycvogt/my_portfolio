@@ -8,11 +8,11 @@ Libraries: lingtypology, tidyverse
 
 Datasets: Phoible, Glottolog
 
-In this project I will use two linguistic datasets (_Phoible_, _Glottolog_), join and explore them to generate insight into cross-linguistic phonetic questions. _Phoible_ is a detailed repository with phonetic inventories of 2186 distinct languages. While they point out that this is a convenience sample, it will still provide interesting tendencies. This repository does not list languages simply by name or ISO Code. Instead, it lists "doculects", i.e. how the phoneme inventory is described in a specific document. Therefore, multiple documents can describe one variety, there may be just one for another. 
+In this project I will use two linguistic datasets (_Phoible_[^1], _Glottolog_[^2]), join and explore them to generate insight into cross-linguistic phonetic questions. _Phoible_ is a detailed repository with phonetic inventories of 2186 distinct languages. While they point out that this is a convenience sample, it will still provide interesting tendencies. This repository does not list languages simply by name or ISO Code. Instead, it lists "doculects", i.e. how the phoneme inventory is described in a specific document. Therefore, multiple documents can describe one variety, there may be just one for another. 
 
 What a “language” is might seem easy to identify in everyday contexts. However, socio-political aspects need to be considered aside from linguistic ones and this can complicate the status of a variety quickly. This is especially true when dealing with varieties of diverse status that are also documented differently. For that reason, I stick with the term “variety” throughout this post.
 
-_Phoible_ already includes some information from _Glottolog_, which is a large catalogue of langauges and their status and families. _Glottolog_ also provides coordinates for mapping the languages and tracking feature distributions. Therefore, I decided to work with both datasets and the library of _lingtypology_. This way, I could map the different phonetic features in Phoible together with the coordinates provided in _Glottolog_. It should be stressed that I specifically wanted to try it this way to challenge myself.
+_Phoible_ already includes some information from _Glottolog_, which is a large catalogue of langauges and their status and families. _Glottolog_ also provides coordinates for mapping the languages and tracking feature distributions. Therefore, I decided to work with both datasets and the library of _lingtypology_[^3]. This way, I could map the different phonetic features in Phoible together with the coordinates provided in _Glottolog_. It should be stressed that I specifically wanted to try it this way to challenge myself.
 
 ```
 #loading phoible
@@ -124,13 +124,11 @@ Tones are more frequent (n=635 varieties). The varieties with the most distinct 
 
 References:
 
-Hammarström, Harald & Forkel, Robert & Haspelmath, Martin & Bank, Sebastian (eds.) 2024. _Glottolog 5.0_. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://doi.org/10.5281/zenodo.10804357 (Available online at http://glottolog.org, Accessed on 2024-07-20.)
+[^1]Moran, Steven & McCloy, Daniel (eds.) 2019. _PHOIBLE 2.0_. Jena: Max Planck Institute for the Science of Human History. (Available online at http://phoible.org, Accessed on 2024-07-20.)
 
-Michaelis, Susanne Maria & Maurer, Philippe & Haspelmath, Martin & Huber, Magnus (eds.) 2013. _Atlas of Pidgin and Creole Language Structures Online_. Leipzig: Max Planck Institute for Evolutionary Anthropology. (Available online at http://apics-online.info, Accessed on 2024-07-21.)
+[^2]Hammarström, Harald & Forkel, Robert & Haspelmath, Martin & Bank, Sebastian (eds.) 2024. _Glottolog 5.0_. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://doi.org/10.5281/zenodo.10804357 (Available online at http://glottolog.org, Accessed on 2024-07-20.)
 
-Moran, Steven & McCloy, Daniel (eds.) 2019. _PHOIBLE 2.0_. Jena: Max Planck Institute for the Science of Human History. (Available online at http://phoible.org, Accessed on 2024-07-20.)
-
-Moroz G (2017). _lingtypology: easy mapping for Linguistic Typology_.<https://CRAN.R-project.org/package=lingtypology>.
+[^3]Moroz G (2017). _lingtypology: easy mapping for Linguistic Typology_.<https://CRAN.R-project.org/package=lingtypology>.
 
 ---
 [Back](https://ycvogt.github.io/my_portfolio/)
