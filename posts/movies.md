@@ -53,7 +53,7 @@ Which year has the most titles?
 ```
 sns.histplot(x='release_year', data=clean_df)
 ```
-<img src="images/image1_movies.png"></img>
+<img src="images/image1_movies.png"></>
 ```
 import plotly.express as px
 fig = px.violin(clean_df, x="release_year")
