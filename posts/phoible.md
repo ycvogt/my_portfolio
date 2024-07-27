@@ -8,7 +8,7 @@ Libraries: lingtypology, tidyverse
 
 Datasets: Phoible, Glottolog
 
-In this project I will use two linguistic datasets (_Phoible_[^1], _Glottolog_[^2]), join and explore them to generate insight into cross-linguistic phonetic questions. _Phoible_ is a detailed repository with phonetic inventories of 2186 distinct languages. While they point out that this is a convenience sample, it will still provide interesting tendencies. This repository does not list languages simply by name or ISO Code. Instead, it lists "doculects", i.e. how the phoneme inventory is described in a specific document. Therefore, multiple documents can describe one variety, there may be just one for another. 
+In this project I will use two linguistic datasets (_Phoible_[1], _Glottolog_[2]), join and explore them to generate insight into cross-linguistic phonetic questions. _Phoible_ is a detailed repository with phonetic inventories of 2186 distinct languages. While they point out that this is a convenience sample, it will still provide interesting tendencies. This repository does not list languages simply by name or ISO Code. Instead, it lists "doculects", i.e. how the phoneme inventory is described in a specific document. Therefore, multiple documents can describe one variety, there may be just one for another. 
 
 What a “language” is might seem easy to identify in everyday contexts. However, socio-political aspects need to be considered aside from linguistic ones and this can complicate the status of a variety quickly. This is especially true when dealing with varieties of diverse status that are also documented differently. For that reason, I stick with the term “variety” throughout this post.
 
