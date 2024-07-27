@@ -42,9 +42,13 @@ view(tibble_results)
 ```
 
 I wanted to start with some simple analyses:
+
 1) Check if there are indeed as many varieties in the dataset as they say.
+
 2) How many different segment types (consonants, vowels, tones) are there?
+   
 3) Which variety has the smallest/largest phoneme inventory?
+   
 4) Which vowel, consonant and tone are most frequently used among all languages?
 
 ```
@@ -68,6 +72,7 @@ view(by_tone_phoneme) #most frequent tone /˦/
 ```
 
 1) There are indeed 3020 varieties/doculects documented.
+   
 2) The results:
    | Segment Type  |    Count|
    | ------------- |---------| 
@@ -75,8 +80,9 @@ view(by_tone_phoneme) #most frequent tone /˦/
    | vowel         |    31052|
    | tone          |     2150|
 
-4) The variety/doculect with the most phonemes is !Xóõ (East Taa) with 161 phonemes. The varieties/doculects with the fewest phonemes are Pirahã and Rotokas with only 11 phonemes each!
-5) The most frequent vowel is /i/ (present in 2779 varieties), the most frequent consonant is /m/ (present in 2915 varieties) and the most frequent tone is a high tone /˦/ (present in 552 varieties).
+3) The variety/doculect with the most phonemes is !Xóõ (East Taa) with 161 phonemes. The varieties/doculects with the fewest phonemes are Pirahã and Rotokas with only 11 phonemes each!
+   
+4) The most frequent vowel is /i/ (present in 2779 varieties), the most frequent consonant is /m/ (present in 2915 varieties) and the most frequent tone is a high tone /˦/ (present in 552 varieties).
 
 
 Next, I decided to use the _GlyphID_ which is the ID given to the phonemes as it made filtering easier. IPA symbols which are used to represent phonemes would have been more problematic. In order to still render IPA symbols, I just used the column _Phoneme_ instad of _GlyphID_ as they represented the same item in the final filtered dataset. 
