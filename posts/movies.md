@@ -7,13 +7,16 @@ Libraries: pandas, numpy, matplotlib, bokeh, seaborn
 
 
 ## Setup and preliminary exloration
-First, we load the dataset and the libraries. Next, we read in the file as a dataframe...
+First, we load the dataset and the libraries. Next, we read in the file as a dataframe.
 
 ```
 df = pd.read_csv('imdb_movies_shows.csv', encoding="UTF-8")
 ```
+The data set looks like this:
 
-...and get an idea of its size:
+<iframe src="images/table1_movies.html" width="100%" height="400px" style="border:none;"></iframe>
+
+Next, we get an idea of its size:
 
 ```df.size #get number of datapoints```
 ```df.shape #get number of (rows, cols) #(5806, 11)```
@@ -38,22 +41,29 @@ pcountries_filtered = imdb_score_filtered.loc[imdb_score_filtered["production_co
 clean_df = pcountries_filtered.loc[pcountries_filtered["title"] != np.NaN, ["title", "type", "release_year", "runtime", "genres", "production_countries", "imdb_score"]]#0 in title, and [] in genres, thus same length
 clean_df.size #get new number after cleaning
 ```
-After cleaning and preprocessing, we have a reduced set of 35791 datapoints. 
+After cleaning and preprocessing, we have a reduced set of 35791 datapoints and the following dataset:
+<iframe src="images/table2_movies.html" width="100%" height="400px" style="border:none;"></iframe>
+
 
 ## Analysis
 
 Which year has the most titles?
-```
-clean_df['release_year'].value_counts(normalize=True)
-```
+
 
 ```
 sns.histplot(x='release_year', data=clean_df)
 ```
+
 ```
 import plotly.express as px
 fig = px.violin(clean_df, x="release_year")
 fig.show()
+```
+
+<iframe src="images/violin.html" width="100%" height="400px" style="border:none;"></iframe>
+
+```
+clean_df['release_year'].value_counts(normalize=True)
 ```
 
 
