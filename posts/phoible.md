@@ -71,7 +71,7 @@ view(by_tone_phoneme) #most frequent tone /˦/
 
 <ol>
 <li>There are indeed 3020 varieties/doculects documented.</li>
-<li>The results:<br></br>
+<li>The results:<br>
 <table>
 <thead>
 <tr>
