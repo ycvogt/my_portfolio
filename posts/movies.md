@@ -17,7 +17,7 @@ df = pd.read_csv('imdb_movies_shows.csv', encoding="UTF-8")
 
 The data set looks like this:
 
-<iframe src="images/movies/table1_movies.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/movies/table1.html" width="100%" height="400px" style="border:none;"></iframe>
 
 Next, we get an idea of its size:
 
@@ -62,7 +62,7 @@ clean_df
 ```
 
 After cleaning and preprocessing, we have a reduced set of 35763 datapoints and the following dataset:
-<iframe src="images/movies/table2_movies.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/movies/table2.html" width="100%" height="400px" style="border:none;"></iframe>
 
 As both columns ```genres``` and ```production_countries``` have multiple values assigned, I split them up and assigned them to a new row for every value. This way, a movie/show that can be categorized into multiple genres/is produced in multiple countries, receives multiple rows. I saved this as a new dataframe in order to keep it separate from the original, comprehensive version.
 
@@ -81,12 +81,8 @@ Note: The replace method did not work for me, so this was my work-around. There 
 
 ## Analysis
 
-From the first overview, we can see that most titles are modern, from around 2017-2021. There are many ways to plot this, but I decided for a bar plot in seaborn and plotly violin plot, as I have not used one before:
-```
-sns.histplot(x='release_year', data=clean_df)
-```
-<img src="images/movies/image1_movies.png"/>
-```
+From the first overview, we can see that most titles are modern, from around 2017-2021. There are many ways to plot this, but I decided for a plotly violin plot, as I have not used one before:
+
 import plotly.express as px
 fig = px.violin(clean_df, x="release_year")
 fig.show()
