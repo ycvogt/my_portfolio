@@ -21,8 +21,6 @@ The data set looks like this:
 
 Next, we get an idea of its size:
 
-
-
 ```
 df.size #number of datapoints
 ```
