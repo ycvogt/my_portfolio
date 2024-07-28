@@ -86,7 +86,6 @@ From the first overview, we can see that most titles are modern, from around 201
 sns.histplot(x='release_year', data=clean_df)
 ```
 <img src="images/movies/image1_movies.png"/>
-
 ```
 import plotly.express as px
 fig = px.violin(clean_df, x="release_year")
