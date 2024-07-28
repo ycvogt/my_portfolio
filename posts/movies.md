@@ -81,6 +81,7 @@ Note: The replace method did not work for me, so this was my work-around. There 
 
 From the first overview, we can see that most titles are modern, from around 2017-2021. There are many ways to plot this, but I decided for a plotly violin plot, as I have not used one before:
 
+```
 import plotly.express as px
 fig = px.violin(clean_df, x="release_year")
 fig.show()
@@ -92,54 +93,54 @@ While there are many datapoints, there are not many movies and shows that are ol
 
 Next, I explored more involved variable combinations:
 
-**How many movies and shows are there in percent?** <br>
+**How many movies and shows are there in percent?** 
 ```
 fig = px.histogram(clean_df, x="type", histnorm = "percent", width=500)
 fig.show()
-```<br>
+```
 <iframe src="images/movies/bar1.html" width="100%" height="400px" style="border:none;"></iframe>
 
-**What is the average IMDB-Score for movies and shows? Which category has a higher IMDB-Score on average?** <br>
+**What is the average IMDB-Score for movies and shows? Which category has a higher IMDB-Score on average?** 
 ```
 fig = px.histogram(clean_df, x="type", y="imdb_score", histfunc="avg", width=500)
 fig.show()
-```<br>
+```
 It seems that shows have a higher IMDB score on average.<br>
 <iframe src="images/movies/bar10.html" width="100%" height="400px" style="border:none;"></iframe>
 
-**How many movies and shows were released per year?** <br>
+**How many movies and shows were released per year?** 
 ```
 fig = px.histogram(clean_df, x="release_year", histnorm = "percent", color="type", width = 900)
 fig.show()
-```<br>
+```
 <iframe src="images/movies/bar3.html" width="100%" height="400px" style="border:none;"></iframe>
 
-**How are genres distributed among movies and shows?** <br>
+**How are genres distributed among movies and shows?**
 ```
 fig = px.histogram(new_df, x="genres", histnorm = "percent", color="type")
 fig.show()
-```<br>
+```
 <iframe src="images/movies/bar4.html" width="100%" height="400px" style="border:none;"></iframe>
 
-**What is the average IMDB-Score per genre and type?** <br>
+**What is the average IMDB-Score per genre and type?**
 ```
 fig = px.histogram(new_df, x="genres", y="imdb_score", color="type", histfunc='avg')
 fig.show()
-```<br>
+```
 <iframe src="images/movies/bar5.html" width="100%" height="400px" style="border:none;"></iframe>
 
-**What is the average IMDB-Score per production country and type?** <br>
+**What is the average IMDB-Score per production country and type?** 
 ```
 fig = px.histogram(newest_df, x="production_countries", y="imdb_score", color = "type", histfunc='avg', width=2000)
 fig.show()
-```<br>
+```
 <iframe src="images/movies/bar6.html" width="100%" height="400px" style="border:none;"></iframe>
 
-**Which country produced the most movies/shows?** <br>
+**Which country produced the most movies/shows?**
 ```
 fig = px.histogram(newest_df, x="production_countries", color = "type", histnorm = "percent", width=1800)
 fig.show()
-```<br>
+```
 <iframe src="images/movies/bar8.html" width="100%" height="400px" style="border:none;"></iframe>
 
 
