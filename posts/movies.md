@@ -96,31 +96,37 @@ fig = px.histogram(clean_df, x="type", histnorm = "percent", width=500)
 fig.show()
 ```
 <iframe src="images/movies/bar1.html" width="100%" height="400px" style="border:none;"></iframe>
+
 ```
 fig = px.histogram(clean_df, x="type", y="imdb_score", histfunc="avg", width=500)
 fig.show()
 ```
 <iframe src="images/movies/bar10.html" width="100%" height="400px" style="border:none;"></iframe>
+
 ```
 fig = px.histogram(clean_df, x="release_year", histnorm = "percent", color="type", width = 900)
 fig.show()
 ```
 <iframe src="images/movies/bar3.html" width="100%" height="400px" style="border:none;"></iframe>
+
 ```
 fig = px.histogram(new_df, x="genres", histnorm = "percent", color="type")
 fig.show()
 ```
 <iframe src="images/movies/bar4.html" width="100%" height="400px" style="border:none;"></iframe>
+
 ```
 fig = px.histogram(new_df, x="genres", y="imdb_score", color="type", histfunc='avg')
 fig.show()
 ```
 <iframe src="images/movies/bar5.html" width="100%" height="400px" style="border:none;"></iframe>
+
 ```
 fig = px.histogram(newest_df, x="production_countries", y="imdb_score", color = "type", histfunc='avg', width=2000)
 fig.show()
 ```
 <iframe src="images/movies/bar6.html" width="100%" height="400px" style="border:none;"></iframe>
+
 ```
 fig = px.histogram(newest_df, x="production_countries", color = "type", histnorm = "percent", width=1800)
 fig.show()
