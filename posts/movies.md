@@ -92,7 +92,7 @@ import plotly.express as px
 fig = px.violin(clean_df, x="release_year")
 fig.show()
 ```
-<iframe src="images/violin.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/movies/violin.html" width="100%" height="400px" style="border:none;"></iframe>
 
 While there are many datapoints, there are not many movies and shows that are older than 2010. Most movies and shows in this dataset are recent. We can also quickly find the exact release year of the oldest and newest films with ```df['release_year'].min()```, which returns 1945, and ```df['release_year'].max()```, which returns 2022.
 
@@ -102,38 +102,38 @@ Next, I explored more involved variable combinations:
 fig = px.histogram(clean_df, x="type", histnorm = "percent", width=500)
 fig.show()
 ```
-
+<iframe src="images/movies/bar1.html" width="100%" height="400px" style="border:none;"></iframe>
 ```
 fig = px.histogram(clean_df, x="type", y="imdb_score", histfunc="avg", width=500)
 fig.show()
 ```
-
+<iframe src="images/movies/bar10.html" width="100%" height="400px" style="border:none;"></iframe>
 ```
 fig = px.histogram(clean_df, x="release_year", histnorm = "percent", color="type", width = 900)
 fig.show()
-fig.write_html("bar3.html")
 ```
-
+<iframe src="images/movies/bar3.html" width="100%" height="400px" style="border:none;"></iframe>
 ```
 fig = px.histogram(new_df, x="genres", histnorm = "percent", color="type")
 fig.show()
-fig.write_html("bar4.html")
 ```
+<iframe src="images/movies/bar4.html" width="100%" height="400px" style="border:none;"></iframe>
 ```
 fig = px.histogram(new_df, x="genres", y="imdb_score", color="type", histfunc='avg')
 fig.show()
-fig.write_html("bar5.html")
 ```
+<iframe src="images/movies/bar5.html" width="100%" height="400px" style="border:none;"></iframe>
 ```
 fig = px.histogram(newest_df, x="production_countries", y="imdb_score", color = "type", histfunc='avg', width=2000)
 fig.show()
-fig.write_html("bar6.html")
 ```
+<iframe src="images/movies/bar6.html" width="100%" height="400px" style="border:none;"></iframe>
 ```
 fig = px.histogram(newest_df, x="production_countries", color = "type", histnorm = "percent", width=1800)
 fig.show()
-fig.write_html("bar8.html")
 ```
+<iframe src="images/movies/bar8.html" width="100%" height="400px" style="border:none;"></iframe>
+
 
 References
 
