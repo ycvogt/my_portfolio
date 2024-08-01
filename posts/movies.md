@@ -163,7 +163,7 @@ JO	SHOW	4.150000<br>
 AO	MOVIE	3.900000<br>
 CY	MOVIE	2.900000<br>
 
-If we remove ```type```from the group-by statement above, we can get the average IMDB-Score per country overall, which results in the follwing countries with the hightest IMDB-Scores:
+If we remove ```type```from the group-by statement above, we can get the average IMDB-Score per country overall, which results in the follwing countries with the hightest IMDB-Scores:<br>
 CU	8.300000<br>
 BS	8.000000<br>
 AF	7.700000<br>
