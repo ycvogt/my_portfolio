@@ -152,23 +152,23 @@ country_imdb = newest_df.groupby(["production_countries", "type"])["imdb_score"]
 country_imdb
 ```
 These are the results (snippet of the highest-scoring ones):
-CL	SHOW	8.500000
-CU	MOVIE	8.300000
-BS	MOVIE	8.000000
-HU	SHOW	7.900000
-PT	SHOW	7.850000
+CL	SHOW	8.500000<br>
+CU	MOVIE	8.300000<br>
+BS	MOVIE	8.000000<br>
+HU	SHOW	7.900000<br>
+PT	SHOW	7.850000<br>
 
 ... and the lowest-scoring ones:
-CM	MOVIE	4.800000
-JO	SHOW	4.150000
-AO	MOVIE	3.900000
-CY	MOVIE	2.900000
+CM	MOVIE	4.800000<br>
+JO	SHOW	4.150000<br>
+AO	MOVIE	3.900000<br>
+CY	MOVIE	2.900000<br>
 
 If we remove ```type```from the group-by statement above, we can get the average IMDB-Score per country overall, which results in the follwing countries with the hightest IMDB-Scores:
-CU	8.300000
-BS	8.000000
-AF	7.700000
-CD	7.700000
+CU	8.300000<br>
+BS	8.000000<br>
+AF	7.700000<br>
+CD	7.700000<br>
 
 
 **Which country produced the most movies/shows?**
