@@ -4,8 +4,7 @@
 
 In this project I will use two linguistic datasets (_Phoible_[1], _Glottolog_[2]), join and explore them to generate insight into cross-linguistic phonetic questions. 
 
-**Libraries**: lingtypology, tidyverse
-
+**Libraries**: lingtypology, tidyverse <br>
 **Datasets**: Phoible, Glottolog
 
 ---
