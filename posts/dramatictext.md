@@ -90,7 +90,7 @@ length_speech = [len(item[1]) for item in speech_list]
 df_act["Word Count"] = length_speech
 df_act
 ```
-<img src="images/Table_Initial.PNG"/>
+<img src="images/earnest/Table_Initial.PNG"/>
 
 With this, we can quantify the overall word count (n=18,953), number of speech acts (n=877), and average word count per speech act (n=21.61):
 
@@ -111,14 +111,14 @@ df_act["Word Count"].mean()
 ```python
 character_df_norm = df_act["Character"].value_counts(normalize=True).apply(lambda x: round(x, 2)).rename_axis('Character').reset_index(name='Speech Act Norm') 
 ```
-<iframe src="images/speech_acts_overall.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/earnest/speech_acts_overall.html" width="100%" height="400px" style="border:none;"></iframe>
 
 
 We can discern that overall, Jack (25%) and Algernon (23%) speak most often. Accumulatively, they take up half of the speech acts in the entire play. Cecily (17%) and Gwendolen (12%) together make up a third of the speach acts overall. The other characters (Lady Bracknell, Chasuble, Miss Prism, Lane and Merriman) speak only very little.  
 
 **3.2. How many speech acts are there per character and per act?**
 
-<iframe src="images/speechact_acts.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/earnest/speechact_acts.html" width="100%" height="400px" style="border:none;"></iframe>
 
 
 **3.3. How many words are there per character within the entire dramatic text?**
@@ -134,7 +134,7 @@ sorted_new_df = new_df.sort_values(by=['Rel Freq Total Words'], ascending=False,
 ```
 After plugging the result into my Bokeh code snippet, we get the following results:
 
-<iframe src="images/wc_overall.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/earnest/wc_overall.html" width="100%" height="400px" style="border:none;"></iframe>
 
 
 When it comes to the number of words used, rather than the number of times they spoke, Jack (22%) and Algernon (22%) speak the most again. This is, however, followed by Lady Bracknell (16%), Cecily (16%) and Gwendolen (12%). This already shows us that Lady Bracknell might not speak often, but when she does, many of her speech acts must be rather long. 
@@ -155,21 +155,21 @@ sorted_new_df_act1 = df_act1_wc_sorted.sort_values(by=['Rel Freq Total Words'], 
 
 Again, afterpluggin these results into my Bokeh code snippet, we get an image for the first act.
 
-<iframe src="images/wc_act1.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/earnest/wc_act1.html" width="100%" height="400px" style="border:none;"></iframe>
 
 In the first act, Algernon (35%) and Lady Bracknell (30%) comprise collectively two thirds of Act 1, followed by Gwendolen (19%), Jack (12%) and Lane (3%).  
 
 Repeating the same procedure for Act 2 and Act 3, we get the other two images.
 
-<iframe src="images/wc_act2.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/earnest/wc_act2.html" width="100%" height="400px" style="border:none;"></iframe>
 
 In the second act, Algernon (38%) and Cecily (24%) make up the vast majority in terms of words spoken. The other characters amount to respecively 16% (Jack), 15% (Miss Prism), 10% (Merriman), 9% (Gwendolen) and 3% (Chasuble).
 
-<iframe src="images/wc_act3.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/earnest/wc_act3.html" width="100%" height="400px" style="border:none;"></iframe>
 
 In the final act, Algernon dominates again with 25%. The remaining characters yield the following results: Cecily (15%), Miss Prism (6%), Merriman (5%), Jack (5%), Lady Bracknell (3%), and Gwendolen (2%). 
 
-<img src="images/IBE.jpg"/>
+<img src="images/earnest/IBE.jpg"/>
 Image: https://en.wikipedia.org/wiki/File:Algy-and-Jack-1895.jpg
 
 ### References:
