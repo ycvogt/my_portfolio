@@ -2,7 +2,7 @@
 
 # Netflix Series and Movies Analysis
 
-**Project**: Analyse and Visualize core trends and distributions in this dataset in Python with plotly.
+In this project I analyse and visualize core trends and distributions of a Netflix Series and Movies dataset in Python with the pandas and plotly libraries.
 
 **Dataset**: The dataset was downloaded from Kaggle[1].
 
@@ -11,18 +11,16 @@
 ---
 
 ## 1. Setup and preliminary exloration
-First, we load the dataset and the libraries. Next, we read in the file as a dataframe.
+First, we load the dataset and the libraries. Next, we read in the file as a dataframe:
 
 ```
 df = pd.read_csv('imdb_movies_shows.csv', encoding="UTF-8")
 ```
 
-The data set looks like this:
-
+The data set (first lines) looks like this:
 <iframe src="images/movies/table1.html" width="100%" height="400px" style="border:none;"></iframe>
 
 Next, we get an idea of its size:
-
 ```
 df.size #number of datapoints
 ```
@@ -41,7 +39,7 @@ df.isnull().sum() / len(df)
 ```
 <img src="images/movies/results_NA.PNG" width="300"/>
 
-There are many missing values in ```age_certification``` (45%) and ```seasons``` (65%), and a few in ```title```(0.2%),```imdb_id```(8%), ```imdb_score```(9%), and ```imdb_votes```(9%).
+There are many missing values in ```age_certification``` (45%) and ```seasons``` (65%), and a few in ```title``` (0.2%),```imdb_id``` (8%), ```imdb_score``` (9%), and ```imdb_votes``` (9%).
 
 ## 2. Cleaning and preprocessing
 
@@ -63,6 +61,7 @@ clean_df
 
 After cleaning and preprocessing, we have a reduced set of 35763 datapoints and the following dataset:
 <iframe src="images/movies/table2.html" width="100%" height="400px" style="border:none;"></iframe>
+
 
 As both columns ```genres``` and ```production_countries``` have multiple values assigned, I split them up and assigned them to a new row for every value. This way, a movie/show that can be categorized into multiple genres/is produced in multiple countries, receives multiple rows. I saved this as a new dataframe in order to keep it separate from the original, comprehensive version.
 
@@ -95,12 +94,22 @@ While there are many datapoints, there are not many movies and shows that are ol
 
 Next, I explored more involved variable combinations:
 
+
 **How many movies and shows are there in percent?** 
 ```
 fig = px.histogram(clean_df, x="type", histnorm = "percent", width=500)
 fig.show()
 ```
 <iframe src="images/movies/bar1.html" width="100%" height="400px" style="border:none;"></iframe>
+
+
+**How are genres distributed among movies and shows?**
+```
+fig = px.histogram(new_df, x="genres", histnorm = "percent", color="type")
+fig.show()
+```
+<iframe src="images/movies/bar4.html" width="100%" height="400px" style="border:none;"></iframe>
+
 
 **What is the average IMDB-Score for movies and shows? Which category has a higher IMDB-Score on average?** 
 ```
@@ -110,6 +119,7 @@ fig.show()
 It seems that shows have a higher IMDB score on average.<br>
 <iframe src="images/movies/bar10.html" width="100%" height="400px" style="border:none;"></iframe>
 
+
 **How many movies and shows were released per year?** 
 ```
 fig = px.histogram(clean_df, x="release_year", histnorm = "percent", color="type", width = 900)
@@ -117,12 +127,6 @@ fig.show()
 ```
 <iframe src="images/movies/bar3.html" width="100%" height="400px" style="border:none;"></iframe>
 
-**How are genres distributed among movies and shows?**
-```
-fig = px.histogram(new_df, x="genres", histnorm = "percent", color="type")
-fig.show()
-```
-<iframe src="images/movies/bar4.html" width="100%" height="400px" style="border:none;"></iframe>
 
 **What is the average IMDB-Score per genre and type?**
 ```
@@ -131,12 +135,14 @@ fig.show()
 ```
 <iframe src="images/movies/bar5.html" width="100%" height="400px" style="border:none;"></iframe>
 
+
 **What is the average IMDB-Score per production country and type?** 
 ```
 fig = px.histogram(newest_df, x="production_countries", y="imdb_score", color = "type", histfunc='avg', width=2000)
 fig.show()
 ```
 <iframe src="images/movies/bar6.html" width="100%" height="400px" style="border:none;"></iframe>
+
 
 **Which country produced the most movies/shows?**
 ```
