@@ -4,11 +4,15 @@
 
 ### Exploring Linguistic Databases in R
 
-Libraries: lingtypology, tidyverse
+In this project I will use two linguistic datasets (_Phoible_[1], _Glottolog_[2]), join and explore them to generate insight into cross-linguistic phonetic questions. 
 
-Datasets: Phoible, Glottolog
+**Libraries**: lingtypology, tidyverse
 
-In this project I will use two linguistic datasets (_Phoible_[1], _Glottolog_[2]), join and explore them to generate insight into cross-linguistic phonetic questions. _Phoible_ is a detailed repository with phonetic inventories of 2186 distinct languages. While they point out that this is a convenience sample, it will still provide interesting tendencies. This repository does not list languages simply by name or ISO Code. Instead, it lists "doculects", i.e. how the phoneme inventory is described in a specific document. Therefore, multiple documents can describe one variety, there may be just one for another. 
+**Datasets**: Phoible, Glottolog
+
+---
+
+_Phoible_ is a detailed repository with phonetic inventories of 2186 distinct languages. While they point out that this is a convenience sample, it will still provide interesting tendencies. This repository does not list languages simply by name or ISO Code. Instead, it lists "doculects", i.e. how the phoneme inventory is described in a specific document. Therefore, multiple documents can describe one variety, there may be just one for another. 
 
 What a “language” is might seem easy to identify in everyday contexts. However, socio-political aspects need to be considered aside from linguistic ones and this can complicate the status of a variety quickly. This is especially true when dealing with varieties of diverse status that are also documented differently. For that reason, I stick with the term “variety” throughout this post.
 
@@ -112,12 +116,12 @@ map.feature(tibble_results$name,
 
 Feel free to explore by zooming in, and clicking on the data points for the language names.
 
-<iframe src="images/distribution_y.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/phoible/distribution_y.html" width="100%" height="400px" style="border:none;"></iframe>
 
 
 Similarly, I explored how many varieties have clicks:
 
-<iframe src="images/clicks_languages.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/phoible/clicks_languages.html" width="100%" height="400px" style="border:none;"></iframe>
 
 ```
 click <- filter(tibble_phoible, click=="+")%>% count(LanguageName, sort=TRUE)
@@ -129,7 +133,7 @@ According to Phoible, 21 varieties have clicks. The varieties with the most clic
 
 We can repeat the same analysis for tones:
 
-<iframe src="images/tonal_languages.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/phoible/tonal_languages.html" width="100%" height="400px" style="border:none;"></iframe>
 
 Based on these datasets, varieties with clicks can only be found in Africa, while tones are present in many varieties in Africa, Asia and North America.
 
