@@ -2,13 +2,15 @@
 
 # Netflix Series and Movies Analysis
 
-**Project**: Analyse and Visualize core trends and distributions in this dataset in python with plotly.
+**Project**: Analyse and Visualize core trends and distributions in this dataset in Python with plotly.
 
 **Dataset**: The dataset was downloaded from Kaggle[1].
 
 **Libraries**: pandas, numpy, matplotlib, plotly
 
-## Setup and preliminary exloration
+---
+
+## 1. Setup and preliminary exloration
 First, we load the dataset and the libraries. Next, we read in the file as a dataframe.
 
 ```
@@ -39,9 +41,9 @@ df.isnull().sum() / len(df)
 ```
 <img src="images/movies/results_NA.PNG" width="300"/>
 
-There are many missing values in ```age_certification``` and ```seasons```, and a few in ```title```,```imdb_id```, ```imdb_score```, and ```imdb_votes```.
+There are many missing values in ```age_certification``` (45%) and ```seasons``` (65%), and a few in ```title```(0.2%),```imdb_id```(8%), ```imdb_score```(9%), and ```imdb_votes```(9%).
 
-## Cleaning and preprocessing
+## 2. Cleaning and preprocessing
 
 Cleaning and preprocessing involves removing columns that I will not consider for further analysis, and subsetting data such that missing values are removed. 
 
@@ -75,9 +77,9 @@ newest_df = new_df.assign(production_countries=clean_df.production_countries.str
 newest_df['production_countries'] = newest_df['production_countries'].str.rstrip("]").str.lstrip("[").str.strip("'")
 newest_df
 ```
-Note: The replace method did not work for me, so this was my work-around. There may be more efficent ways to clean the resulting column values.
+_Note: The replace method did not work for me, so this was my work-around. There may be more efficent ways to clean the resulting column values._
 
-## Analysis
+## 3. Analysis
 
 From the first overview, we can see that most titles are modern, from around 2017-2021. There are many ways to plot this, but I decided for a plotly violin plot, as I have not used one before:
 
@@ -146,6 +148,8 @@ fig.show()
 
 References
 
-[1] <https://www.kaggle.com/datasets/maso0dahmed/netflix-movies-and-shows?resource=download>
+[1] Data was downloaded from: <https://www.kaggle.com/datasets/maso0dahmed/netflix-movies-and-shows?resource=download> (last accessed July 2024).
+
+---
 
 [Back](https://ycvogt.github.io/my_portfolio/)
