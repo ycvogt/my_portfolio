@@ -1,12 +1,11 @@
 [Back](https://ycvogt.github.io/my_portfolio/)
 
 
-## The Importance of Being Earnest: A Quantitative Text Analysis
+# The Importance of Being Earnest: A Quantitative Text Analysis
 
 The aim of this project was to automatically dissect and clean the dramatic text _The Importance of Being Earnest_ by Oscar Wilde (downloaded from _Project Gutenberg_) in order to quantify the speech acts and word counts per character overall and per act. 
 
-**Skills**: textual data cleaning, structuring, tokenization, visualization
-
+**Skills**: textual data cleaning, structuring, tokenization, visualization <br>
 **Libraries**: SpaCy, Regex, Pandas, Numpy, Matplotlib, Bokeh
 
 ---
