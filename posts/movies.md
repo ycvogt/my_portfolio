@@ -4,9 +4,8 @@
 
 In this project I analyse and visualize core trends and distributions of a Netflix Series and Movies dataset in Python with the pandas and plotly libraries.
 
+**Libraries**: pandas, numpy, matplotlib, plotly <br>
 **Dataset**: The dataset was downloaded from Kaggle[1].
-
-**Libraries**: pandas, numpy, matplotlib, plotly
 
 ---
 
