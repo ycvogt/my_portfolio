@@ -151,14 +151,14 @@ While this is a nice visualization to play with, I cannot right away see which c
 country_imdb = newest_df.groupby(["production_countries", "type"])["imdb_score"].mean().sort_values(ascending=False)
 country_imdb
 ```
-These are the results (snippet of the highest-scoring ones):
+These are the results (snippet of the highest-scoring ones):<br>
 CL	SHOW	8.500000<br>
 CU	MOVIE	8.300000<br>
 BS	MOVIE	8.000000<br>
 HU	SHOW	7.900000<br>
 PT	SHOW	7.850000<br>
-
-... and the lowest-scoring ones:
+<br>
+... and the lowest-scoring ones:<br>
 CM	MOVIE	4.800000<br>
 JO	SHOW	4.150000<br>
 AO	MOVIE	3.900000<br>
