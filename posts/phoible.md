@@ -83,15 +83,15 @@ view(by_tone_phoneme) #most frequent tone /˦/
 <tbody>
 <tr>
 <td>consonant</td>
-<td>72282</td>
+<td align="right">72282</td>
 </tr>
 <tr>
 <td>vowel</td>
-<td>31052</td>
+<td align="right">31052</td>
 </tr>
 <tr>
 <td>tone</td>
-<td>2150</td>
+<td align="right">2150</td>
 </tr>
 </tbody>
 </table>
