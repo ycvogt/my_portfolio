@@ -13,7 +13,7 @@
 
 ---
 ### R Projects
-[Project 1: Phoible, Glottolog and lingtypology](/posts/phoible.md)
+[Project 1: Exploring the Sounds of the World in _R_](/posts/phoible.md)
 
 ---
 ### Linguistics Projects
