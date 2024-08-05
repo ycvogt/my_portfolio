@@ -91,7 +91,7 @@ fig.show()
 
 While there are many datapoints, there are not many movies and shows that are older than 2010. Most movies and shows in this dataset are recent. We can also quickly find the exact release year of the oldest and newest films with ```df['release_year'].min()```, which returns 1945, and ```df['release_year'].max()```, which returns 2022.
 
-Next, I explored more involved variable combinations:
+Next, I explored more involved variable combinations.
 
 
 **How many movies and shows are there in percent?** 
@@ -184,7 +184,7 @@ This shows us that most shows and movies are produced in the US and that those m
 fig = px.histogram(newest_df, x="production_countries", color = "type", histnorm = "percent", width=1800)
 fig.show()
 ```
-<iframe src="images/movies/bar8.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/movies/bar8.html" width="100%" height="400px" style="border:none;"></iframe><br>
 
 
 References
