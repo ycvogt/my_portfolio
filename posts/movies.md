@@ -17,7 +17,7 @@ df = pd.read_csv('imdb_movies_shows.csv', encoding="UTF-8")
 ```
 
 The data set (first lines) looks like this:
-<iframe src="images/movies/table1.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/movies/table1.html" width="100%" height="400px" style="border:none;"></iframe><br>
 
 Next, we get an idea of its size:
 ```
@@ -101,7 +101,7 @@ Movies make up 65% and shows take up 35% of the dataset.
 fig = px.histogram(clean_df, x="type", histnorm = "percent", width=500)
 fig.show()
 ```
-<iframe src="images/movies/bar1.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/movies/bar1.html" width="100%" height="400px" style="border:none;"></iframe><br>
 
 
 **How many movies and shows were released per year?** 
@@ -111,7 +111,7 @@ This shows the same distribution as the violin plot above. Most movies and shows
 fig = px.histogram(clean_df, x="release_year", histnorm = "percent", color="type", width = 900)
 fig.show()
 ```
-<iframe src="images/movies/bar3.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/movies/bar3.html" width="100%" height="400px" style="border:none;"></iframe><br>
 
 
 **How are genres distributed among movies and shows?**
@@ -121,7 +121,7 @@ Drama is the most frequent genre, followed by comedy, thriller and action. Inter
 fig = px.histogram(new_df, x="genres", histnorm = "percent", color="type")
 fig.show()
 ```
-<iframe src="images/movies/bar4.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/movies/bar4.html" width="100%" height="400px" style="border:none;"></iframe><br>
 
 
 **What is the average IMDB-Score for movies and shows? Which category has a higher IMDB-Score on average?** 
@@ -131,7 +131,7 @@ It seems that shows have a higher IMDB score on average.
 fig = px.histogram(clean_df, x="type", y="imdb_score", histfunc="avg", width=500)
 fig.show()
 ```
-<iframe src="images/movies/bar10.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/movies/bar10.html" width="100%" height="400px" style="border:none;"></iframe><br>
 
 
 **What is the average IMDB-Score per genre and type?**
@@ -141,7 +141,7 @@ In terms of movies, documentaries have the highest IMDB-Scores on average (6.9) 
 fig = px.histogram(new_df, x="genres", y="imdb_score", color="type", histfunc='avg')
 fig.show()
 ```
-<iframe src="images/movies/bar5.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/movies/bar5.html" width="100%" height="400px" style="border:none;"></iframe><br>
 
 
 **What is the average IMDB-Score per production country and type?** 
@@ -149,7 +149,7 @@ fig.show()
 fig = px.histogram(newest_df, x="production_countries", y="imdb_score", color = "type", histfunc='avg', width=2000)
 fig.show()
 ```
-<iframe src="images/movies/bar6.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/movies/bar6.html" width="100%" height="400px" style="border:none;"></iframe><br>
 
 While this is a nice visualization to play with, I cannot right away see which country has the highest average score in movies/shows, so I do this:
 
