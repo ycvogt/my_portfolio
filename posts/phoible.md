@@ -73,28 +73,15 @@ view(by_tone_phoneme) #most frequent tone /˦/
 <ol>
 <li>There are indeed 3020 varieties/doculects documented.</li>
 <li>The results:<br>
-<table>
-<thead>
-<tr>
-<th>Segment Type</th>
-<th>Count</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>consonant</td>
-<td align="right">72282</td>
-</tr>
-<tr>
-<td>vowel</td>
-<td align="right">31052</td>
-</tr>
-<tr>
-<td>tone</td>
-<td align="right">2150</td>
-</tr>
-</tbody>
-</table>
++---------------+---------------+
+| Segment Type  | Count         | 
++===============+===============+
+| Consonant     | 72282         | 
++---------------+---------------+
+| Vowel         | 31052         | 
++---------------+---------------+
+| Tone          | 2150          | 
++---------------+---------------+
 </li>
 <li>The variety/doculect with the most phonemes is !Xóõ (East Taa) with 161 phonemes. The varieties/doculects with the fewest phonemes are Pirahã and Rotokas with only 11 phonemes each!</li>
 <li>The most frequent vowel is /i/ (present in 2779 varieties), the most frequent consonant is /m/ (present in 2915 varieties) and the most frequent tone is a high tone /˦/ (present in 552 varieties).</li>
