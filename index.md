@@ -19,3 +19,7 @@
 ### Linguistics Projects
 
 ---
+### Other Projects
+
+[Transcribing Early Modern Manuscript Texts, Endoding them in HTML, DEx Database (University Project)] (/posts/manuscript.md)
+
