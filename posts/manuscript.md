@@ -1,6 +1,7 @@
 [Back](https://ycvogt.github.io/my_portfolio/)
 
 # Early Modern Manuscripts: Transcription, Encoding and Digitalization
+---
 
 As part of the MA colloquium _From the Archives to Digital Database: Encoding Early Modern Manuscript Texts_ taught by Dr. Beatrice Montedoro at the University of Zurich in 2021, I transcribed early modern manuscripts and encoded them in HTML (original and standardized version). The results were then published on the digital database [DEx](https://dex.digitalearlymodern.com/).
 
@@ -18,3 +19,5 @@ Further additions of mine (as part of an XML collectively transcribed by all par
 <li>By Crequi, in _The Conspiracy and Tragedy of Byron_ (4.1.176-185), George Chapman in Bodleian Library MS English miscellaneous d. 28, col. 701</li>
 <li>By Crequi, in _The Conspiracy and Tragedy of Byron_ (4.1.187-213), George Chapman in Bodleian Library MS English miscellaneous d. 28, cols. 702-703</li>
 
+
+[Back](https://ycvogt.github.io/my_portfolio/)
