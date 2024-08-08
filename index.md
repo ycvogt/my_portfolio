@@ -19,5 +19,5 @@
 ---
 ### Other Projects
 
-[Transcribing and Encoding Early Modern Manuscripts in HTML](/posts/manuscript.md)
+[Project 1: Transcribing and Encoding Early Modern Manuscripts in HTML](/posts/manuscript.md)
 
