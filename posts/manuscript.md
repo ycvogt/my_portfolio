@@ -4,7 +4,7 @@
 
 As part of the MA colloquium “From the Archives to Digital Database: Encoding Early Modern Manuscript Texts” taught by Dr. Beatrice Montedoro at the University of Zurich in 2021, I transcribed early modern manuscripts and encoded them in HTML (original and standard version). The results were then published on the digital database [DEx](https://dex.digitalearlymodern.com/).
 
-My contribution involves extracts with following pages under [Bodleian Library MS English poetry d. 3](https://daikatana.digitalearlymodern.com/manuscripts/?query=BodleianMSEngpoetd3.xml):
+My contribution spans extracts with the following page numbers under [Bodleian Library MS English poetry d. 3](https://daikatana.digitalearlymodern.com/manuscripts/?query=BodleianMSEngpoetd3.xml):
 <ul>
  <li>f. 42r, f. 42v</li>
  <li>f. 80r, f. 80v</li>
