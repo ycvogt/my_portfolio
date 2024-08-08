@@ -12,7 +12,7 @@ My contribution involves extracts with following pages under [Bodleian Library M
  <li>f. 86v</li>
 </ul>
 
-Further additions of mine (as part of an XML collectively transcribed by all participants in the seminar) can be found [here](https://daikatana.digitalearlymodern.com/manuscripts/?query=BodleianMSEngmiscd28.xml&spelling=normalized)
+Further additions of mine (as part of an XML collectively transcribed by all participants in the seminar) can be found [here](https://daikatana.digitalearlymodern.com/manuscripts/?query=BodleianMSEngmiscd28.xml&spelling=normalized):
 <ul>
  <li>By The Duke of Byron, in The Conspiracy and Tragedy of Byron (3.3.25-30), George Chapman in Bodleian Library MS English miscellaneous d. 28, col. 701</li>
 <li>By Crequi, in The Conspiracy and Tragedy of Byron (4.1.176-185), George Chapman in Bodleian Library MS English miscellaneous d. 28, col. 701</li>
