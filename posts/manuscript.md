@@ -18,6 +18,6 @@ Further additions of mine (as part of an XML collectively transcribed by all par
  <li>By The Duke of Byron, in <i>The Conspiracy and Tragedy of Byron</i> (3.3.25-30), George Chapman in Bodleian Library MS English miscellaneous d. 28, col. 701</li>
 <li>By Crequi, in <i>The Conspiracy and Tragedy of Byron</i> (4.1.176-185), George Chapman in Bodleian Library MS English miscellaneous d. 28, col. 701</li>
 <li>By Crequi, in <i>The Conspiracy and Tragedy of Byron</i> (4.1.187-213), George Chapman in Bodleian Library MS English miscellaneous d. 28, cols. 702-703</li>
-
+</ul>
 
 [Back](https://ycvogt.github.io/my_portfolio/)
