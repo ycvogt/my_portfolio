@@ -2,7 +2,7 @@
 
 # Early Modern Manuscripts: Transcription, Encoding and Digitalization
 
-As part of the MA colloquium “From the Archives to Digital Database: Encoding Early Modern Manuscript Texts” taught by Dr. Beatrice Montedoro at the University of Zurich in 2021, I transcribed early modern manuscripts and encoded them in HTML (original and standard version). The results were then published on the digital database [DEx](https://dex.digitalearlymodern.com/).
+As part of the MA colloquium “From the Archives to Digital Database: Encoding Early Modern Manuscript Texts” taught by Dr. Beatrice Montedoro at the University of Zurich in 2021, I transcribed early modern manuscripts and encoded them in HTML (original and standardized version). The results were then published on the digital database [DEx](https://dex.digitalearlymodern.com/).
 
 My contribution spans extracts with the following page numbers under [Bodleian Library MS English poetry d. 3](https://daikatana.digitalearlymodern.com/manuscripts/?query=BodleianMSEngpoetd3.xml):
 <ul>
