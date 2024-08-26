@@ -3,7 +3,7 @@
 ---
 ### Python Projects
 
-[Project 1: The Importance of Text Processing and Analysis](/posts/dramatictext.md)
+[Project 1: The Importance of Text Processing and Analysis](/posts/dramatictext.md)<br/>
 [Project 2: Netflix Shows and Movies Analysis](/posts/movies.md)
 <!--<img src="images/dummy_thumbnail.jpg?raw=true"/>-->
 
@@ -18,5 +18,5 @@
 ---
 ### Other Projects and GitHub publications
 
-[Project 1: Transcribing and Encoding Early Modern Manuscripts in HTML](/posts/manuscript.md)
+[Project 1: Transcribing and Encoding Early Modern Manuscripts in HTML](/posts/manuscript.md)<br/>
 [Project 2: Readability Rater](https://github.com/ycvogt/readability)
