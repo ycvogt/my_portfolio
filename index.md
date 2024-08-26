@@ -17,7 +17,7 @@
 
 <!--[Project 3 Title](http://example.com/)-->
 ---
-### Other Projects
+### Other Projects and GitHub publications
 
 [Project 1: Transcribing and Encoding Early Modern Manuscripts in HTML](/posts/manuscript.md)
-
+[Project 2: Readability Rater](https://github.com/ycvogt/readability)
