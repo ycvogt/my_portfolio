@@ -24,6 +24,6 @@ Further additions of mine (as part of an XML collectively transcribed by all par
 
 <img src="images/manuscript/html.PNG" width="500" class="center"/>
 
-References: Laura Estill and Beatrice Montedoro, eds., _DEx: A Database of Dramatic Extracts_, Iter, <dex.digitalearlymodern.com>.
+References: Laura Estill and Beatrice Montedoro, eds., _DEx: A Database of Dramatic Extracts_, Iter, <a href="https://dex.digitalearlymodern.com/">dex.digitalearlymodern.com</a>.
 
 [Back](https://ycvogt.github.io/my_portfolio/)
