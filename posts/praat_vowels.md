@@ -1,21 +1,28 @@
+[Back](https://ycvogt.github.io/my_portfolio/)
+
 ## Vowel Formant Frequency Alterations as Voice Disguise Strategy 
 
-A recent project of mine for university explored the change of first and second formants in vowels as a means of voice disguise strategy. For the analysis part I utilized _Praat_ and _R_. For the full paper, please contact me.
-
+A recent project of mine for university explored the change of first and second formants in vowels as a means of voice disguise strategy. For the analysis part I utilized _Praat_[1] and _R_[2]. In the following, I used excerpts from this paper (for the full paper, please contact me).
 
 ### Praat
 
-(My own voice recording disguised, versino 6.3.17)
-Spectogram at the bottom
-This collected data was then read into R and vowel charts were created.
+After visually identifying the relevant segments with the aid of the spectogram (this takes some knowledge of phonetics and how specific sounds look like in a spectogram), I zoomed in to select the exact vowel segment. This segment was then measured for the average F1 and F2 values. According to Davenport and Hannahs [3], it is specifically the "relative positions of the first and second formants (F1 and F2) are characteristic of specific vowels". While the F1 formant represents tongue height, the F2 formant represents backness or frontness [4].
 
+This amounted to 352 data points in total, based on which the mean and average values of F1 and F2 formants for each vowel were calculated. This data was then read into R and vowel charts were created. The data consists of 8 vowels which were measured for 10 participants. Those were measured for F1 and F2 values once for regular and once for disguised voice modes.
+
+<img src="img_chania.jpg">
+Image 1: My own voice recording disguised.
+
+<img src="img_chania.jpg">
+Image 2: My own voice recording disguised.
 
 ### Analysis in R and Visualizations
 
+First, I import the libraries:<br/>
 ```library(dplyr)
 library(ggplot2)
 ```
-
+Next, I load the data for the normal voice mode and plotted the vowel chart (a common way of displaying vowel frequencies):
 ```
 ##load data
 my_data <- read.table(file="D:/Uni/Master/Semester_8/VA/Results.txt", header=TRUE, sep="\t", encoding="UTF-8")
@@ -34,9 +41,9 @@ ggplot(means, aes(x = mean_F2, y = mean_F1, label= VOWEL)) +
   theme_classic()
 ```
 
+<img src="img_chania.jpg">
 
-
-
+The same was repeated for the disguised voice mode:
 
 ```
 ##load data
@@ -56,14 +63,23 @@ ggplot(means_d, aes(x = mean_F2_d, y = mean_F1_d, label= VOWEL)) +
   theme_classic()
 ```
 
-
+<img src="img_chania.jpg">
 
 
 ### Findings 
 
+What we can see here is that there is a change in F1 and F2 frequencies. However, in order to conclusively link this to a change in vowel position in the mouth (i.e. a change in pronunciation) further measurment techniques would be necessary (e.g. MRI Imaging or electropalatography). 
 
+---
 ### References
 
-A great overview on how to make such vowel charts in R are shown by Joey Stanley:<br/>
+[1]Boersma, Paul & Weenink, David (2024). Praat: doing phonetics by computer [Computer program]. Version 6.3.17, retrieved 21 August 2024 from http://www.praat.org/. <br/>
+[2]RStudio Team (2024). RStudio: Integrated Development for R. RStudio, PBC, Boston, MA URL http://www.rstudio.com/.<br/>
+[3]Davenport, M., & Hannahs, S.J. (2010). Introducing Phonetics and Phonology (3rd ed.). Routledge. https://doi.org/10.4324/9780203785447.<br/>
+[4]Hansen Edwards, J. G. (2023). The Sounds of English Around the World: An Introduction to Phonetics and Phonology. Cambridge: Cambridge University Press.<br/>
+
+A great overview on how to make such vowel charts in _R_ are shown by Joey Stanley:<br/>
 https://joeystanley.com/blog/making-vowel-plots-in-r-part-1/<br/>
 https://joeystanley.com/blog/making-vowel-plots-in-r-part-2/
+
+[Back](https://ycvogt.github.io/my_portfolio/)
