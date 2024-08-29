@@ -10,10 +10,10 @@ After visually identifying the relevant segments with the aid of the spectogram 
 
 This amounted to 352 data points in total, based on which the mean and average values of F1 and F2 formants for each vowel were calculated. This data was then read into R and vowel charts were created. The data consists of 8 vowels which were measured for 10 participants. Those were measured for F1 and F2 values once for regular and once for disguised voice modes.
 
-<img src="img_chania.jpg">
+<img src="images/praat/Praat.PNG">
 Image 1: My own voice recording disguised.
 
-<img src="img_chania.jpg">
+<img src="images/praat/Praat2.PNG">
 Image 2: My own voice recording disguised.
 
 ### Analysis in R and Visualizations
@@ -41,7 +41,7 @@ ggplot(means, aes(x = mean_F2, y = mean_F1, label= VOWEL)) +
   theme_classic()
 ```
 
-<img src="img_chania.jpg">
+<img src="images/praat/R1.png">
 
 The same was repeated for the disguised voice mode:
 
@@ -63,8 +63,7 @@ ggplot(means_d, aes(x = mean_F2_d, y = mean_F1_d, label= VOWEL)) +
   theme_classic()
 ```
 
-<img src="img_chania.jpg">
-
+<img src="images/praat/R2.png">
 
 ### Findings 
 
