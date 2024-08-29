@@ -6,7 +6,7 @@ A recent project of mine for university explored the change of first and second 
 
 ### Praat
 
-After visually identifying the relevant segments with the aid of the spectogram (this takes some knowledge of phonetics and how specific sounds look like in a spectogram), I zoomed in to select the exact vowel segment. This segment was then measured for the average F1 and F2 values. According to Davenport and Hannahs [3], it is specifically the "relative positions of the first and second formants (F1 and F2) are characteristic of specific vowels". While the F1 formant represents tongue height, the F2 formant represents backness or frontness [4].
+After visually identifying the relevant segments with the aid of the spectrogram (this takes some knowledge of phonetics and how specific sounds look like in a spectrogram), I zoomed in to select the exact vowel segment. This segment was then measured for the average F1 and F2 values. According to Davenport and Hannahs [3], it is specifically the "relative positions of the first and second formants (F1 and F2) are characteristic of specific vowels". While the F1 formant represents tongue height, the F2 formant represents backness or frontness [4].
 
 This amounted to 352 data points in total, based on which the mean and average values of F1 and F2 formants for each vowel were calculated. This data was then read into R and vowel charts were created. The data consists of 8 vowels which were measured for 10 participants. Those were measured for F1 and F2 values once for regular and once for disguised voice modes.
 
@@ -67,7 +67,7 @@ ggplot(means_d, aes(x = mean_F2_d, y = mean_F1_d, label= VOWEL)) +
 
 ### Findings 
 
-What we can see here is that there is a change in F1 and F2 frequencies. However, in order to conclusively link this to a change in vowel position in the mouth (i.e. a change in pronunciation) further measurment techniques would be necessary (e.g. MRI Imaging or electropalatography). 
+What we can see here is that there is a change in F1 and F2 frequencies. However, in order to conclusively link this to a change in vowel position in the mouth (i.e. a change in pronunciation) further measurement techniques would be necessary (e.g. MRI Imaging or electropalatography). 
 
 ---
 ### References
