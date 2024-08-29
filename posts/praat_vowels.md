@@ -42,6 +42,7 @@ ggplot(means, aes(x = mean_F2, y = mean_F1, label= VOWEL)) +
 ```
 
 <img src="images/praat/R1.png">
+Image 3: Vowel Chart Normal Voice Mode.
 
 The same was repeated for the disguised voice mode:
 
@@ -64,6 +65,7 @@ ggplot(means_d, aes(x = mean_F2_d, y = mean_F1_d, label= VOWEL)) +
 ```
 
 <img src="images/praat/R2.png">
+Image 4: Vowel Chart Disguised Voice Mode.
 
 ### Findings 
 
