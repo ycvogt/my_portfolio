@@ -14,7 +14,8 @@
 ---
 ### Linguistics Projects
 
-<!--[Project 3 Title](http://example.com/)-->
+[Project 1: Vowel Formants in _Praat_ and Visualization in _R_](/posts/praat_vowels.md)
+
 ---
 ### Other Projects and GitHub publications
 
