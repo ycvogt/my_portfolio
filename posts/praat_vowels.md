@@ -82,7 +82,7 @@ What we can see here is that there is a change in F1 and F2 frequencies. However
 [3]Davenport, M., & Hannahs, S.J. (2010). Introducing Phonetics and Phonology (3rd ed.). Routledge. https://doi.org/10.4324/9780203785447.<br/>
 [4]Hansen Edwards, J. G. (2023). The Sounds of English Around the World: An Introduction to Phonetics and Phonology. Cambridge: Cambridge University Press.<br/>
 
-A great overview on how to make such vowel charts in _R_ are shown by Joey Stanley:<br/>
+A great overview on how to make such vowel charts in _R_ is presented by Joey Stanley:<br/>
 https://joeystanley.com/blog/making-vowel-plots-in-r-part-1/<br/>
 https://joeystanley.com/blog/making-vowel-plots-in-r-part-2/
 
