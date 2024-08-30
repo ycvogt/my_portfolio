@@ -20,7 +20,8 @@ Image 2: Measuring F1 and F2 values. My own voice recording disguised.
 
 First, I import the libraries:
 
-```library(dplyr)
+```
+library(dplyr)
 library(ggplot2)
 ```
 
