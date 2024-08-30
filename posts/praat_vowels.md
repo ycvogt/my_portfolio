@@ -8,20 +8,22 @@ A recent project of mine for university explored the change of first and second 
 
 After visually identifying the relevant segments with the aid of the spectrogram (this takes some knowledge of phonetics and how specific sounds look like in a spectrogram), I zoomed in to select the exact vowel segment. This segment was then measured for the average F1 and F2 values. According to Davenport and Hannahs [3], it is specifically the "relative positions of the first and second formants (F1 and F2) are characteristic of specific vowels". While the F1 formant represents tongue height, the F2 formant represents backness or frontness [4].
 
-This amounted to 352 data points in total, based on which the mean and average values of F1 and F2 formants for each vowel were calculated. This data was then read into R and vowel charts were created. The data consists of 8 vowels which were measured for 10 participants. Those were measured for F1 and F2 values once for regular and once for disguised voice modes.
+This amounted to 352 data points in total, based on which the mean and average values of F1 and F2 formants for each vowel were calculated. This data was then read into R and vowel charts were created. The data consists of 8 vowels which were measured for 10 participants. Those were measured for F1 and F2 values once for regular and once for disguised voice modes. In Images 1-2 below, I selected the sound [i] as in the word _tea_. 
 
 <img src="images/praat/Praat.PNG">
-Image 1: My own voice recording disguised.
+Image 1: Selecting the relevant segment. My own voice recording disguised.
 
 <img src="images/praat/Praat2.PNG">
-Image 2: My own voice recording disguised.
+Image 2: Measuring F1 and F2 values. My own voice recording disguised.
 
 ### Analysis in R and Visualizations
 
-First, I import the libraries:<br/>
+First, I import the libraries:
+
 ```library(dplyr)
 library(ggplot2)
 ```
+
 Next, I load the data for the normal voice mode and plotted the vowel chart (a common way of displaying vowel frequencies):
 ```
 ##load data
