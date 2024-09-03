@@ -88,27 +88,27 @@ We an immediately see that the vast majority of all trailer comments reflect the
 In order to learn more about the content of the comments, we need to look at some word-frequencies.
 
 
-<img src="images/sentiment_bridgerton/s1.png" width="1000"/><br/>
+<img src="images/sentiment_bridgerton/s1.png" width="800"/>
 (Season 1 Trailer Comments.)<br/>
 
 In season 1, commentators were seemingly more focused on the cast and general changes to the original book series and it being presented as a show now. Comparisons are made to other series and movies such as _Pride and Prejudice_ or _50 Shades of Grey_. 
 
-<img src="images/sentiment_bridgerton/s2.png" width="1000"/><br/>
+<img src="images/sentiment_bridgerton/s2.png" width="800"/>
 (Season 2 Trailer Comments.)<br/>
 
 Season 2 is more obsessed with the original book, referencing and predicting parts in the series, specifically the love story between Anthony and Kate. Comparisons are drawn to the romance genre and its tropes, as well as other shows like _Gossip Girl_.
 
-<img src="images/sentiment_bridgerton/s3.png" width="1000"/><br/>
+<img src="images/sentiment_bridgerton/s3.png" width="800"/>
 (Season 3 Trailer Comments.)<br/>
 
 In the third season, there is a greater obsession with the relationships (see _friendship_, _friend_) between the characters, rather than the actors. Great focus is put on Penelope, Cressida and Eloise, and to a degree Collin. But it seems that commentators are more concerned with how the friendship unfolds rather than the romance.
 
-<img src="images/sentiment_bridgerton/s4.png" width="1000"/><br/>
+<img src="images/sentiment_bridgerton/s4.png" width="800"/>
 (Season 4 Trailer Comments.)<br/>
 
 Season four seams to be a mix of season 2 and season 3. There is again a frequent reference back to the book series (_book_, _story_), and to the two main protagonists, Benedict and Sopie. Predictions are very present again as well as markers of opinion and evidentiality (_think_, _maybe_, _thought_). 
 
-<img src="images/sentiment_bridgerton/qc.png" width="1000"/><br/>
+<img src="images/sentiment_bridgerton/qc.png" width="800"/>
 (Queen Charlotte Trailer Comments.)<br/>
 
 This series trailer is, similar to the first trailer, very interested in the cast and in how far the story was changed compared to the historical person of Queen Charlotte. 
