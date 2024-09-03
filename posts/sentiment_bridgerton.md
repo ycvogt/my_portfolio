@@ -12,11 +12,11 @@ The popular Netflix Series "Bridgerton" (based on the novel series by Julia Quin
 
 For this project, I first scraped the 200 most popular comments of each Netflix Bridgerton Series trailer on YouTube with the library ```youtube-comment-downloader``` [2]:
 
-* **Season 1 Trailer**: https://www.youtube.com/watch?v=gpv7ayf_tyE
-* **Season 2 Trailer**: https://www.youtube.com/watch?v=Bs9r1UbmFAI
-* **Season 3 Trailer**: https://www.youtube.com/watch?v=U4JYAx5rNRA&pp=ygUcYnJpZGdlcnRvbiBzZWFzb24gMyB0cmFpbGVyIA%3D%3D
-* **Season 4 Trailer**: https://www.youtube.com/watch?v=VGHJPpo2oeU
-* **Queen Charlotte Trailer**: https://www.youtube.com/watch?v=oLtnNw0KT78
+* [**Season 1 Trailer**](https://www.youtube.com/watch?v=gpv7ayf_tyE)
+* [**Season 2 Trailer**](https://www.youtube.com/watch?v=Bs9r1UbmFAI)
+* [**Season 3 Trailer**](https://www.youtube.com/watch?v=U4JYAx5rNRA&pp=ygUcYnJpZGdlcnRvbiBzZWFzb24gMyB0cmFpbGVyIA%3D%3D)
+* [**Season 4 Trailer**](https://www.youtube.com/watch?v=VGHJPpo2oeU)
+* [**Queen Charlotte Trailer**](https://www.youtube.com/watch?v=oLtnNw0KT78)
 
 Here are code snippets of my project:
 
