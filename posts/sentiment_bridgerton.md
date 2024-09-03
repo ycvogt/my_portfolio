@@ -1,3 +1,5 @@
+[Back](https://ycvogt.github.io/my_portfolio/)
+
 # Unsupervised Sentiment Analysis of Bridgerton YouTube Trailer Comments
 
 The popular Netflix Series "Bridgerton" (based on the novel series by Julia Quinn) seems to cause quite many emotions whenever new season trailers are released. What do people think about the different seasons based on their trailers? Let’s find out!
@@ -37,4 +39,4 @@ References:
 [2] https://pypi.org/project/youtube-comment-downloader
 [3] https://huggingface.co/bhadresh-savani/distilbert-base-uncased-emotion 
 
-
+[Back](https://ycvogt.github.io/my_portfolio/)
