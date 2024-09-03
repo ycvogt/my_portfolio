@@ -85,20 +85,21 @@ Finally, I made some visualizations based on the results of the model:
 
 #interpretation/findings
 
+Season 1 Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/s1.png" width="1000"/><br/>
-(Season 1 Trailer Comments)
 
+Season 2 Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/s2.png" width="1000"/><br/>
-(Season 2 Trailer Comments)
 
+Season 3 Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/s3.png" width="1000"/><br/>
-(Season 3 Trailer Comments)
 
+Season 4 Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/s4.png" width="1000"/><br/>
-(Season 4 Trailer Comments)
 
+Queen Charlotte Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/qc.png" width="1000"/><br/>
-(Queen Charlotte Trailer Comments)
+
 
 ### Caveats and Shortcomings
 
