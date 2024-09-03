@@ -28,15 +28,16 @@ Finally, I made some visualizations based on the results of the model:
 
 #interpretation/findings
 
-Caveat: 
-not always accurate categorization (gossip as negative, but what a joke correctly identified, hit and miss with sarcasm)
-only looked at 200 most popular comments (high reply count and likes), while this may give a good picture of the grand scheme of opinions, one must not forget that many smaller comments may shift some of the categorizations 
-this is just based on youtube, and does not account for the overall impression in all social media
+### Caveats and Shortcomings
 
-References:
+*  The model has a reported accuracy of 93.8	and F1-score of 93.79. However, the model does of course not always assign the most fitting category, e.g. "Gossip girl + pride and prejudice + 50 shades[...]" are classified as "angry", but "what a joke" is correctly identified as "angry". It is a bit hit and miss with sarcasm as well. This could be improved with some fine-tuning of the model.
+*  I only looked at the 200 most popular comments (high reply count and likes) of each trailer. While this may give a good picture of the most prominent views, it is still excluding many smaller opinions that could shift some of the total counts/percentages. 
+* The insights gained from this project are just based on the platform YouTube and do not account for the overall impression of these trailers in all social media. This is something to consider.
 
-[1] "Almack's Assembly Rooms". Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Almack%27s_Assembly_Rooms_inside.jpg (last accessed Sept 9, 2024).
-[2] https://pypi.org/project/youtube-comment-downloader
-[3] https://huggingface.co/bhadresh-savani/distilbert-base-uncased-emotion 
+### References:
+
+[1] "Almack's Assembly Rooms". Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Almack%27s_Assembly_Rooms_inside.jpg (last accessed Sept 9, 2024).<br/> 
+[2] https://pypi.org/project/youtube-comment-downloader<br/> 
+[3] https://huggingface.co/bhadresh-savani/distilbert-base-uncased-emotion<br/> 
 
 [Back](https://ycvogt.github.io/my_portfolio/)
