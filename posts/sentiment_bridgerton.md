@@ -2,7 +2,7 @@
 
 # Unsupervised Sentiment Analysis of Bridgerton YouTube Trailer Comments
 
-The popular Netflix Series "Bridgerton" (based on the novel series by Julia Quinn) seems to cause quite many emotions whenever new season trailers are released. What do people think about the different seasons based on their trailers? Let’s find out!
+The popular Netflix Series "Bridgerton" (based on the novel series by Julia Quinn) seems to cause many emotions amongst viewers whenever new season trailers are released. What do people think about the different seasons based on the trailers? Let’s find out!
 
 **Skills**: webscraping, data cleaning, social media opinion mining, NLP, unsupervised sentiment analysis<br/> 
 **Libraries**: youtube-comment-downloader, pandas, spacy, emoji, transformers, wordcloud, plotly
@@ -10,7 +10,7 @@ The popular Netflix Series "Bridgerton" (based on the novel series by Julia Quin
 <img src="images/sentiment_bridgerton/Almacks.jpg" width="800"/>
 (Almack's Assembly Rooms [1])<br/> 
 
-For this project, I first scraped the 200 most popular comments with the library youtube-comment-downloader [2] for five of the Netflix Bridgerton Series trailers on YouTube.
+For this project, I first scraped the 200 most popular comments of each Netflix Bridgerton Series trailer on YouTube with the library ```youtube-comment-downloader``` [2]:
 
 * **Season 1 Trailer**: https://www.youtube.com/watch?v=gpv7ayf_tyE
 * **Season 2 Trailer**: https://www.youtube.com/watch?v=Bs9r1UbmFAI
@@ -44,7 +44,7 @@ df_s1 = pd.DataFrame(s1)
 df_s1 = df_s1.drop(columns=['author', 'channel', 'cid', 'photo', 'heart', 'reply', 'time_parsed'], axis=1) #I am removing these for privacy reasons
 ```
 
-Next, preprocessing was necessary: removing emojis and emoticons, punctuation, usernames, tokenizing, lowercasing, and shaping the comments into useful dataframes and as input to the model:
+Next, pre-processing was necessary: removing emojis and emoticons, punctuation, usernames, tokenizing, lowercasing, and shaping the comments into useful dataframes and as input to the model:
 
 ```
 #Season 1 (same for the other trailers)
@@ -63,7 +63,7 @@ def edit_for_model(comment_list):
 comment_s1 = edit_for_model(comment_s1_list)
 ```
 
-The dataset was now ready for the model to be predicted. I decided to use disilbert-base-uncased-emotion [3], as it offered a more fine-grained display of emotional categories ('sadness', 'joy', 'love', 'anger', 'fear', 'surprise') compared to the popular three-way distinction (positve, negative, neutral). The model assigned to every post a percentage of how likely each of these emotions are. I decided to keep all of them instead of choosing the most likely one (i.e. the one with the highest score), as this might help in some situations to represent a more nuanced picture of the user's sentiment. In addition, this model is trained on twitter data, which is fairly close to YouTube comments, as both are part of the wider social media register.
+The dataset was now ready for the model to be predicted. I decided to use ```disilbert-base-uncased-emotion``` [3], as it offered a more fine-grained display of emotional categories ('sadness', 'joy', 'love', 'anger', 'fear', 'surprise') compared to the popular three-way distinction (positve, negative, neutral). The model assigned to every post a percentage of how likely each of these emotions are. I decided to keep all of them instead of choosing the most likely one (i.e. the one with the highest score), as this might help in some situations to represent a more nuanced picture of the user's sentiment. In addition, this model is trained on twitter data, which is fairly close to YouTube comments, as both are part of the wider social media register.
 
 ```
 classifier = pipeline("sentiment-analysis",model='bhadresh-savani/distilbert-base-uncased-emotion', return_all_scores=True)
@@ -83,23 +83,34 @@ Finally, I made some visualizations based on the results of the model:
 
 <iframe src="images/sentiment_bridgerton/final_image.html" width="100%" height="400px" style="border:none;"></iframe><br/>
 
-#interpretation/findings
+We an immediately see that the vast majority of all trailer comments reflect the emotion "joy". So far so good! However, we can also see that "anger" is equally present, with roughly a third of the comments reflecting this emotion. Especially season 3 seems to have stirred a lot of "anger". This might have to do with the changes that the directors made to the original book series by Julia Quinn, which would also explain the high number of comments relating to "surprise" - but this is just a guess. The users express the emotion of "love" in some way or another in all trailers more or less equally. "Sadness" finds the greatest expression in the spin-off Queen Charlotte, which might have to do with the sadness of the story. 
+
+In order to learn more about the content of the comments, we need to look at some word-frequencies.
 
 Season 1 Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/s1.png" width="1000"/><br/>
 
+In season 1, commentators were seemingly more focused on the cast and general changes to the original book series and it being presented as a show now. Comparisons are made to other series and movies such as _Pride and Prejudice_ or _50 Shades of Grey_. 
+
 Season 2 Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/s2.png" width="1000"/><br/>
+
+Season 2 is more obsessed with the original book, referencing and predicting parts in the series, specifically the love story between Anthony and Kate. Comparisons are drawn to the romance genre and its tropes, as well as other shows like _Gossip Girl_.
 
 Season 3 Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/s3.png" width="1000"/><br/>
 
+In the third season, there is a greater obsession with the relationships (see _friendship_, _friend_) between the characters, rather than the actors. Great focus is put on Penelope, Cressida and Eloise, and to a degree Collin. But it seems that commentators are more concerned with how the friendship unfolds rather than the romance.
+
 Season 4 Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/s4.png" width="1000"/><br/>
+
+Season four seams to be a mix of season 2 and season 3. There is again a frequent reference back to the book series (_book_, _story_), and to the two main protagonists, Benedict and Sopie. Predictions are very present again as well as markers of opinion and evidentiality (_think_, _maybe_, _thought_). 
 
 Queen Charlotte Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/qc.png" width="1000"/><br/>
 
+This series trailer is, similar to the first trailer, very interested in the cast and in how far the story was changed compared to the historical person of Queen Charlotte. 
 
 ### Caveats and Shortcomings
 
