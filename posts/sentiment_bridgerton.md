@@ -8,7 +8,7 @@ The popular Netflix Series "Bridgerton" (based on the novel series by Julia Quin
 **Libraries**: youtube-comment-downloader, pandas, spacy, emoji, transformers, wordcloud, plotly
 
 <img src="images/sentiment_bridgerton/Almacks.jpg" width="800"/>
-(Almack's Assembly Rooms [1])<br/> 
+(Almack's Assembly Rooms [1].)<br/> 
 
 For this project, I first scraped the 200 most popular comments of each Netflix Bridgerton Series trailer on YouTube with the library ```youtube-comment-downloader``` [2]:
 
@@ -87,41 +87,42 @@ We an immediately see that the vast majority of all trailer comments reflect the
 
 In order to learn more about the content of the comments, we need to look at some word-frequencies.
 
-Season 1 Trailer Comments:<br/>
+
 <img src="images/sentiment_bridgerton/s1.png" width="1000"/><br/>
+(Season 1 Trailer Comments.)<br/>
 
 In season 1, commentators were seemingly more focused on the cast and general changes to the original book series and it being presented as a show now. Comparisons are made to other series and movies such as _Pride and Prejudice_ or _50 Shades of Grey_. 
 
-Season 2 Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/s2.png" width="1000"/><br/>
+(Season 2 Trailer Comments.)<br/>
 
 Season 2 is more obsessed with the original book, referencing and predicting parts in the series, specifically the love story between Anthony and Kate. Comparisons are drawn to the romance genre and its tropes, as well as other shows like _Gossip Girl_.
 
-Season 3 Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/s3.png" width="1000"/><br/>
+(Season 3 Trailer Comments.)<br/>
 
 In the third season, there is a greater obsession with the relationships (see _friendship_, _friend_) between the characters, rather than the actors. Great focus is put on Penelope, Cressida and Eloise, and to a degree Collin. But it seems that commentators are more concerned with how the friendship unfolds rather than the romance.
 
-Season 4 Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/s4.png" width="1000"/><br/>
+(Season 4 Trailer Comments.)<br/>
 
 Season four seams to be a mix of season 2 and season 3. There is again a frequent reference back to the book series (_book_, _story_), and to the two main protagonists, Benedict and Sopie. Predictions are very present again as well as markers of opinion and evidentiality (_think_, _maybe_, _thought_). 
 
-Queen Charlotte Trailer Comments:<br/>
 <img src="images/sentiment_bridgerton/qc.png" width="1000"/><br/>
+(Queen Charlotte Trailer Comments.)<br/>
 
 This series trailer is, similar to the first trailer, very interested in the cast and in how far the story was changed compared to the historical person of Queen Charlotte. 
 
 ### Caveats and Shortcomings
 
-*  The model has a reported accuracy of 93.8 and F1-score of 93.79. However, the model does of course not always assign the most fitting category, e.g. "Gossip girl + pride and prejudice + 50 shades[...]" are classified as "angry", but "what a joke" is correctly identified as "angry". It is a bit hit and miss with sarcasm as well. This could be improved with some fine-tuning of the model.
+*  The model has a reported accuracy of 93.8 and F1-score of 93.79. However, the model does of course not always assign the most fitting category, e.g. "Gossip girl + pride and prejudice + 50 shades[...]" are classified as "angry", but "what a joke" is correctly identified as "angry". It is a bit hit and miss with sarcasm as well. This could be improved with some fine-tuning of the model, with a small share of the dataset that is manually labelled and that serves as the gold standard to the model. 
 *  I only looked at the 200 most popular comments (high reply count and likes) of each trailer, amounting to 1000 comments. While this may give a good picture of the most prominent views, it is still excluding many smaller opinions that could shift some of the total counts/percentages. 
 * The insights gained from this project are just based on the platform YouTube and do not account for the overall impression of these trailers in all social media. This is something to consider.
 
 ### References:
 
-[1] "Almack's Assembly Rooms". Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Almack%27s_Assembly_Rooms_inside.jpg (last accessed Sept 9, 2024).<br/> 
-[2] https://pypi.org/project/youtube-comment-downloader<br/> 
-[3] https://huggingface.co/bhadresh-savani/distilbert-base-uncased-emotion<br/> 
+[1] "Almack's Assembly Rooms". Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Almack%27s_Assembly_Rooms_inside.jpg (last accessed Sept 3, 2024).<br/> 
+[2] https://pypi.org/project/youtube-comment-downloader<br/> (last accessed Sept 3, 2024).
+[3] https://huggingface.co/bhadresh-savani/distilbert-base-uncased-emotion<br/> (last accessed Sept 3, 2024).
 
 [Back](https://ycvogt.github.io/my_portfolio/)
