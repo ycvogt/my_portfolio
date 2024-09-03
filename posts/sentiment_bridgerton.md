@@ -7,7 +7,7 @@ The popular Netflix Series "Bridgerton" (based on the novel series by Julia Quin
 **Skills**: webscraping, data cleaning, social media opinion mining, NLP, unsupervised sentiment analysis<br/> 
 **Libraries**: youtube-comment-downloader, pandas, spacy, emoji, transformers, wordcloud, plotly
 
-<img src="images/sentiment_bridgeton/Almacks.jpg" width="300"/>
+<img src="images/sentiment_bridgerton/Almacks.jpg" width="300"/>
 [Almack's Assembly Rooms [1]]
 
 For this project, I first scraped the 200 most popular comments with the library youtube-comment-downloader [2] for five of the Netflix Bridgerton Series trailers on YouTube.
@@ -18,6 +18,7 @@ For this project, I first scraped the 200 most popular comments with the library
 * **Season 4 Trailer**: https://www.youtube.com/watch?v=VGHJPpo2oeU
 * * **Queen Charlotte Trailer**: https://www.youtube.com/watch?v=oLtnNw0KT78
 
+Here are code snippets of my project:
 
 ```
 !pip install youtube-comment-downloader
@@ -84,25 +85,25 @@ Finally, I made some visualizations based on the results of the model:
 
 #interpretation/findings
 
-<img src="images/sentiment_bridgeton/s1" width="300"/>
+<img src="images/sentiment_bridgerton/s1" width="300"/>
 [Season 1 Trailer Comments]
 
-<img src="images/sentiment_bridgeton/s2" width="300"/>
+<img src="images/sentiment_bridgerton/s2" width="300"/>
 [Season 2 Trailer Comments]
 
-<img src="images/sentiment_bridgeton/s3" width="300"/>
+<img src="images/sentiment_bridgerton/s3" width="300"/>
 [Season 3 Trailer Comments]
 
-<img src="images/sentiment_bridgeton/s4" width="300"/>
+<img src="images/sentiment_bridgerton/s4" width="300"/>
 [Season 4 Trailer Comments]
 
-<img src="images/sentiment_bridgeton/qc" width="300"/>
+<img src="images/sentiment_bridgerton/qc" width="300"/>
 [Queen Charlotte Trailer Comments]
 
 ### Caveats and Shortcomings
 
-*  The model has a reported accuracy of 93.8	and F1-score of 93.79. However, the model does of course not always assign the most fitting category, e.g. "Gossip girl + pride and prejudice + 50 shades[...]" are classified as "angry", but "what a joke" is correctly identified as "angry". It is a bit hit and miss with sarcasm as well. This could be improved with some fine-tuning of the model.
-*  I only looked at the 200 most popular comments (high reply count and likes) of each trailer. While this may give a good picture of the most prominent views, it is still excluding many smaller opinions that could shift some of the total counts/percentages. 
+*  The model has a reported accuracy of 93.8 and F1-score of 93.79. However, the model does of course not always assign the most fitting category, e.g. "Gossip girl + pride and prejudice + 50 shades[...]" are classified as "angry", but "what a joke" is correctly identified as "angry". It is a bit hit and miss with sarcasm as well. This could be improved with some fine-tuning of the model.
+*  I only looked at the 200 most popular comments (high reply count and likes) of each trailer, amounting to 1000 comments. While this may give a good picture of the most prominent views, it is still excluding many smaller opinions that could shift some of the total counts/percentages. 
 * The insights gained from this project are just based on the platform YouTube and do not account for the overall impression of these trailers in all social media. This is something to consider.
 
 ### References:
