@@ -8,7 +8,7 @@ The popular Netflix Series "Bridgerton" (based on the novel series by Julia Quin
 **Libraries**: youtube-comment-downloader, pandas, spacy, emoji, transformers, wordcloud, plotly
 
 <img src="images/sentiment_bridgerton/Almacks.jpg" width="800"/>
-[Almack's Assembly Rooms [1]]
+(Almack's Assembly Rooms [1])<br/> 
 
 For this project, I first scraped the 200 most popular comments with the library youtube-comment-downloader [2] for five of the Netflix Bridgerton Series trailers on YouTube.
 
@@ -16,7 +16,7 @@ For this project, I first scraped the 200 most popular comments with the library
 * **Season 2 Trailer**: https://www.youtube.com/watch?v=Bs9r1UbmFAI
 * **Season 3 Trailer**: https://www.youtube.com/watch?v=U4JYAx5rNRA&pp=ygUcYnJpZGdlcnRvbiBzZWFzb24gMyB0cmFpbGVyIA%3D%3D
 * **Season 4 Trailer**: https://www.youtube.com/watch?v=VGHJPpo2oeU
-* * **Queen Charlotte Trailer**: https://www.youtube.com/watch?v=oLtnNw0KT78
+* **Queen Charlotte Trailer**: https://www.youtube.com/watch?v=oLtnNw0KT78
 
 Here are code snippets of my project:
 
@@ -86,19 +86,19 @@ Finally, I made some visualizations based on the results of the model:
 #interpretation/findings
 
 <img src="images/sentiment_bridgerton/s1" width="300"/>
-[Season 1 Trailer Comments]
+(Season 1 Trailer Comments)
 
 <img src="images/sentiment_bridgerton/s2" width="300"/>
-[Season 2 Trailer Comments]
+(Season 2 Trailer Comments)
 
 <img src="images/sentiment_bridgerton/s3" width="300"/>
-[Season 3 Trailer Comments]
+(Season 3 Trailer Comments)
 
 <img src="images/sentiment_bridgerton/s4" width="300"/>
-[Season 4 Trailer Comments]
+(Season 4 Trailer Comments)
 
 <img src="images/sentiment_bridgerton/qc" width="300"/>
-[Queen Charlotte Trailer Comments]
+(Queen Charlotte Trailer Comments)
 
 ### Caveats and Shortcomings
 
