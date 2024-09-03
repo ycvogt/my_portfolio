@@ -81,23 +81,23 @@ results_s1 = sentiment(comment_s1)
 
 Finally, I made some visualizations based on the results of the model:
 
-<iframe src="images/sentiment_bridgerton/final_image.html" width="100%" height="400px" style="border:none;"></iframe><br>
+<iframe src="images/sentiment_bridgerton/final_image.html" width="100%" height="400px" style="border:none;"></iframe><br/>
 
 #interpretation/findings
 
-<img src="images/sentiment_bridgerton/s1.png" width="300"/>
+<img src="images/sentiment_bridgerton/s1.png" width="500"/><br/>
 (Season 1 Trailer Comments)
 
-<img src="images/sentiment_bridgerton/s2.png" width="300"/>
+<img src="images/sentiment_bridgerton/s2.png" width="500"/><br/>
 (Season 2 Trailer Comments)
 
-<img src="images/sentiment_bridgerton/s3.png" width="300"/>
+<img src="images/sentiment_bridgerton/s3.png" width="500"/><br/>
 (Season 3 Trailer Comments)
 
-<img src="images/sentiment_bridgerton/s4.png" width="300"/>
+<img src="images/sentiment_bridgerton/s4.png" width="500"/><br/>
 (Season 4 Trailer Comments)
 
-<img src="images/sentiment_bridgerton/qc.png" width="300"/>
+<img src="images/sentiment_bridgerton/qc.png" width="500"/><br/>
 (Queen Charlotte Trailer Comments)
 
 ### Caveats and Shortcomings
