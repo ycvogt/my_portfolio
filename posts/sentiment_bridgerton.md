@@ -7,7 +7,7 @@ The popular Netflix Series "Bridgerton" (based on the novel series by Julia Quin
 **Skills**: webscraping, data cleaning, social media opinion mining, NLP, unsupervised sentiment analysis<br/> 
 **Libraries**: youtube-comment-downloader, pandas, spacy, emoji, transformers, wordcloud, plotly
 
-<img src="images/sentiment_bridgerton/Almacks.jpg" width="300"/>
+<img src="images/sentiment_bridgerton/Almacks.jpg" width="800"/>
 [Almack's Assembly Rooms [1]]
 
 For this project, I first scraped the 200 most popular comments with the library youtube-comment-downloader [2] for five of the Netflix Bridgerton Series trailers on YouTube.
