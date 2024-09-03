@@ -4,7 +4,7 @@
 ### Python Projects
 
 [The Importance of Text Processing and Analysis](/posts/dramatictext.md)<br/>
-[Netflix Shows and Movies Analysis](/posts/movies.md)
+[Netflix Shows and Movies Analysis](/posts/movies.md)<br/>
 [nsupervised Sentiment Analysis of Bridgerton YouTube Trailer Comments](/posts/sentiment_bridgerton.md)
 <!--<img src="images/dummy_thumbnail.jpg?raw=true"/>-->
 
