@@ -8,6 +8,8 @@ The popular Netflix Series "Bridgerton" (based on the novel series by Julia Quin
 **Skills**: webscraping, data cleaning, social media opinion mining, NLP, unsupervised sentiment analysis<br/> 
 **Libraries**: youtube-comment-downloader, pandas, spacy, emoji, transformers, wordcloud, plotly
 
+---
+
 <img src="images/sentiment_bridgerton/Almacks.jpg" width="800"/>
 Almack's Assembly Rooms [1].<br/> 
 
