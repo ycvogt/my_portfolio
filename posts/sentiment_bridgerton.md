@@ -1,6 +1,6 @@
 [Back](https://ycvogt.github.io/my_portfolio/)
 
-Sept. 3rd, 2024
+
 ---
 
 # Unsupervised Sentiment Analysis of Bridgerton YouTube Trailer Comments
