@@ -78,7 +78,7 @@ def sentiment(comments):
 
 results_s1 = sentiment(comment_s1)
 ```
-<iframe src="images/sentiment_bridgerton/final_df.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/sentiment_bridgerton/final_df.html" width="100%" height="400px" style="border:none;"></iframe><br/>
 
 Finally, I made some visualizations based on the results of the model:
 
@@ -88,28 +88,27 @@ We an immediately see that the vast majority of all trailer comments reflect the
 
 In order to learn more about the content of the comments, we need to look at some word-frequencies.
 
-
-Season 1 Trailer Comments:<br/>
+__Season 1 Trailer Comments__ <br/>
 In season 1, commentators were seemingly more focused on the cast and general changes to the original book series and it being presented as a show now. Comparisons are made to other series and movies such as _Pride and Prejudice_ or _50 Shades of Grey_.<br/>
 <img src="images/sentiment_bridgerton/s1.png" width="800"/>
  
-Season 2 Trailer Comments:<br/>
+__Season 2 Trailer Comments__ <br/>
 Season 2 is more obsessed with the original book, referencing and predicting parts in the series, specifically the love story between Anthony and Kate. Comparisons are drawn to the romance genre and its tropes, as well as other shows like _Gossip Girl_.<br/>
 <img src="images/sentiment_bridgerton/s2.png" width="800"/>
 
-Season 3 Trailer Comments:<br/>
+__Season 3 Trailer Comments__ <br/>
 In the third season, there is a greater obsession with the relationships (see _friendship_, _friend_) between the characters, rather than the actors. Great focus is put on Penelope, Cressida and Eloise, and to a degree Collin. But it seems that commentators are more concerned with how the friendship unfolds rather than the romance.<br/>
 <img src="images/sentiment_bridgerton/s3.png" width="800"/>
 
-Season 4 Trailer Comments:<br/>
+__Season 4 Trailer Comments__ <br/>
 Season four seams to be a mix of season 2 and season 3. There is again a frequent reference back to the book series (_book_, _story_), and to the two main protagonists, Benedict and Sopie. Predictions are very present again as well as markers of opinion and evidentiality (_think_, _maybe_, _thought_).<br/>
 <img src="images/sentiment_bridgerton/s4.png" width="800"/>
 
-Queen Charlotte Trailer Comments:<br/>
+__Queen Charlotte Trailer Comments__ <br/>
 This series trailer is, similar to the first trailer, very interested in the cast and in how far the story was changed compared to the historical person of Queen Charlotte.<br/>
 <img src="images/sentiment_bridgerton/qc.png" width="800"/>
 
-### Caveats and Shortcomings
+__Caveats and Shortcomings__
 
 *  The model has a reported accuracy of 93.8 and F1-score of 93.79. However, the model does of course not always assign the most fitting category, e.g. "Gossip girl + pride and prejudice + 50 shades[...]" are classified as "angry", but "what a joke" is correctly identified as "angry". It is a bit hit and miss with sarcasm as well. This could be improved with some fine-tuning of the model, with a small share of the dataset that is manually labelled and that serves as the gold standard to the model. 
 *  I only looked at the 200 most popular comments (high reply count and likes) of each trailer, amounting to 1000 comments. While this may give a good picture of the most prominent views, it is still excluding many smaller opinions that could shift some of the total counts/percentages. 
