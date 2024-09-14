@@ -132,10 +132,11 @@ with torch.no_grad():
 ```
 <img src="images/ml_class/cm.PNG"/>
 
-My model achieved an accuracy of approx. 97% and an f1 score of approx. 0.97 as well! As a result, it can automatically (and quite accurately) classify a text of the BBC Archive as belonging into one of the five categories _business_, _entertainment_, _politics_, _sport_, _tech_. The confusion matrix shows that most labels are correctly predicted (i.e. true positives and true negatives).
+My model achieved an accuracy of approx. 97% and an f1 score of approx. 0.97 as well! The confusion matrix shows that most labels are correctly predicted (i.e. true positives and true negatives). As a result, it can automatically (and quite accurately) classify a text of the BBC Archive as belonging into one of the five categories _business_, _entertainment_, _politics_, _sport_, _tech_.
+
 
 __References__: <br>
-[1] Dataset: https://www.kaggle.com/datasets/hgultekin/bbcnewsarchive (last accessed Sept. 12, 2024).
+[1] Dataset: https://www.kaggle.com/datasets/hgultekin/bbcnewsarchive (last accessed Sept. 12, 2024).<br>
 Please note that parts of this project were re-used and slightly adapted from previous assignments completed for university.
 
 [Back](https://ycvogt.github.io/my_portfolio/)
