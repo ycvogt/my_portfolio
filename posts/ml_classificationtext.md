@@ -130,7 +130,7 @@ with torch.no_grad():
     accuracy,f1=evaluation_metrics(predict_test_y,test_y_tensor)
     print('Accuracy: %.3f f1: %.3f'% (accuracy,f1))
 ```
-<img src="images/ml_class/cm.PNG" width="200">
+<img src="images/ml_class/cm.PNG" width="350">
 
 My model achieved an accuracy of approx. 97% and an f1 score of approx. 0.97 as well! The confusion matrix shows that most labels are correctly predicted (i.e. true positives and true negatives). As a result, it can automatically (and quite accurately) classify a text of the BBC Archive as belonging into one of the five categories _business_, _entertainment_, _politics_, _sport_, _tech_.
 
