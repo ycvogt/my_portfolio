@@ -18,7 +18,7 @@ We can see in the first plot that most categories have approximately the same am
 
 <iframe src="images/ml_class/texts_categories.html" width="100%" height="400px" style="border:none;"></iframe>
 
-<iframe src="images/ml_class/overview_texts_categories.html"" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/ml_class/overview_texts_categories.html" width="100%" height="400px" style="border:none;"></iframe>
 
 
 Next, I split it into training, validation, and test sets:
