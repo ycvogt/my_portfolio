@@ -128,7 +128,7 @@ with torch.no_grad():
     print('Accuracy: %.3f f1: %.3f'% (accuracy,f1))
 ```
 
-My model achieved an accuracy of 0.971 and an f1 score of 0.971 as well! As a result, it can automatically (and quite accurately) classify a text of the BBC Archive as belonging into one of the five categories _business_, _entertainment_, _politics_, _sport_, _tech_.
+My model achieved an accuracy of approx. 97% and an f1 score of approx. 0.97 as well! As a result, it can automatically (and quite accurately) classify a text of the BBC Archive as belonging into one of the five categories _business_, _entertainment_, _politics_, _sport_, _tech_.
 
 __References__: <br>
 [1] Dataset: https://www.kaggle.com/datasets/hgultekin/bbcnewsarchive (last accessed Sept. 12, 2024).
