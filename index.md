@@ -5,7 +5,7 @@
 
 [The Importance of Text Processing and Analysis](/posts/dramatictext.md)<br/>
 [Netflix Shows and Movies Analysis](/posts/movies.md)<br/>
-[Unsupervised Sentiment Analysis of Bridgerton YouTube Trailer Comments](/posts/sentiment_bridgerton.md)
+[Unsupervised Sentiment Analysis of Bridgerton YouTube Trailer Comments](/posts/sentiment_bridgerton.md)<br/>
 [Machine Learning and BBC Text Classification](/posts/ml_classificationtext.md)
 <!--<img src="images/dummy_thumbnail.jpg?raw=true"/>-->
 
