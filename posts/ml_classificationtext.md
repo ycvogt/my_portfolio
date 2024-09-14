@@ -5,7 +5,7 @@
 The aim of this project was to automatically classify _BBC News_ articles into 5 categories (_business_, _entertainment_, _politics_, _sport_, _tech_) according to their content.
 
 **Skills**: machine learning, training/validation loss visualization, word embedding, text classification <br>
-**Libraries**: Pandas, Numpy, Matplotlib, Pytorch, Sklearn 
+**Libraries**: pandas, numpy, matplotlib, pytorch, sklearn, plotly
 
 ---
 ### 1. Preparing Textual Data
