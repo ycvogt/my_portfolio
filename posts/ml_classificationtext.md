@@ -15,8 +15,11 @@ After downloading the dataset BBC News Archive from Kaggle [1], I loaded it as a
 We can see in the first plot that most categories have approximately the same amount of words, except for _business_ (~15%). However, in terms of number of texts, _tech_ counts the lowest number of texts (n=224), as shown in the second plot. In the third plot we can see the average length of texts (measured in number of words/tokens) per category. This shows us that the longest texts are in _politics_ and _tech_, and shorter texts are in _business_, _sport_ and _entertainment_.
 
 <iframe src="images/ml_class/overview_words_category.html" width="100%" height="400px" style="border:none;"></iframe>
-<iframe src="images/ml_class/texts_categories.html.html" width="100%" height="400px" style="border:none;"></iframe>
+
+<iframe src="images/ml_class/texts_categories.html" width="100%" height="400px" style="border:none;"></iframe>
+
 <iframe src="images/ml_class/overview_texts_categories.html"" width="100%" height="400px" style="border:none;"></iframe>
+
 
 Next, I split it into training, validation, and test sets:
 
