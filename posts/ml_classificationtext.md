@@ -112,7 +112,7 @@ for i in range(epochs):
 
 The following image shows how well our model performs, i.e. whether it struggles with over-/under-fitting or neither:
 
-<img src="images/ml_class/train_val_loss.PNG"/>
+<img src="images/ml_class/train_val_loss.PNG" width="350">
 
 It turns out, it works pretty well! There is no great difference between validation and training loss and there is a clear, steep learning curve. 
 
