@@ -5,17 +5,13 @@
 
 [The Importance of Text Processing and Analysis](/posts/dramatictext.md)<br/>
 [Netflix Shows and Movies Analysis](/posts/movies.md)<br/>
-[Unsupervised Sentiment Analysis of Bridgerton YouTube Trailer Comments](/posts/sentiment_bridgerton.md)<br/>
+[Unsupervised Sentiment Analysis: Bridgerton YouTube Comments](/posts/sentiment_bridgerton.md)<br/>
 [Machine Learning and BBC Text Classification](/posts/ml_classificationtext.md)
 <!--<img src="images/dummy_thumbnail.jpg?raw=true"/>-->
 
 ---
 ### R Projects
-[Exploring the Sounds of the World in _R_](/posts/phoible.md)
-
----
-### Linguistics Projects
-
+[Exploring the Sounds of the World in _R_](/posts/phoible.md)<br/>
 [Measuring and Visualizing Vowel Formants in _Praat_ and _R_](/posts/praat_vowels.md)
 
 ---
