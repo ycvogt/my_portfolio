@@ -2,7 +2,6 @@
 
 ---
 ### Python Projects
-
 [The Importance of Text Processing & Analysis](/posts/dramatictext.md)<br/>
 [Netflix Shows & Movies Analysis](/posts/movies.md)<br/>
 [Unsupervised Sentiment Analysis: Bridgerton YouTube Comments](/posts/sentiment_bridgerton.md)<br/>
@@ -17,6 +16,5 @@
 
 ---
 ### Other Projects and GitHub publications
-
 [Transcribing & Encoding Early Modern Manuscripts in HTML](/posts/manuscript.md)<br/>
 [Readability Rater](https://github.com/ycvogt/readability)
