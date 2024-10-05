@@ -91,7 +91,7 @@ Image 6: Vowel Chart Disguised Voice Mode.
 
 ### 4. Conclusion and Caveat
 
-What we can see here is that there is a change in F1 and F2 frequencies. How signficant (and how big these changes are), would require some more statistical testing. The error bars in the data analysis do not allow any inferential interpretations, but rather display how much the data disperses around the mean values. Moreover, in order to conclusively link this to a change in vowel position in the mouth (i.e. a change in pronunciation) further measurement techniques would be necessary (e.g. MRI Imaging or electropalatography). I hope that this could still nicely illustrate how useful vowel charts can be and how one can measure F1 and F2 values in _Praat_.
+What we can see here is that there is a change in F1 and F2 frequencies. How signficant (and how big these changes are), would require some more statistical testing. The error bars in the data analysis do not allow any inferential interpretations, but rather display how much the data disperses around the mean values. As there is quite some dispersion, we should also only carefully interpret the final two images, as the mean is strongly affected by outliers. Moreover, in order to conclusively link this to a change in vowel position in the mouth (i.e. a change in pronunciation) further measurement techniques would be necessary (e.g. MRI Imaging or electropalatography). I hope that this could still nicely illustrate how useful vowel charts can be and how one can measure F1 and F2 values in _Praat_.
 
 ---
 ### References and Footnotes
