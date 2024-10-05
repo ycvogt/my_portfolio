@@ -62,9 +62,11 @@ Image 3: F1 Mean Values with Standard Deviation for Normal and Disguised Mode.
 <img src="images/praat/stat2.png">
 Image 4: F2 Mean Values with Standard Deviation for Normal and Disguised Mode.
 
+We can see in Images 3-4 how much the data spreads around the average values for each vowel. For example, we can see that the datapoints spread quite widely for the F1 and F2 formants. This may be due to the diverse linguistic background of speakers, causing a generally greater dispersion of pronouncing English sounds. It could als be due to the general idiosyncracies of the speakers or problems during measurement. I would argue, however, that there is a certain trend: The disguised standard deviations are greater than those those of the normal voice modes. This would need further verfication, but if we follow this idea, this could imply that changing your voice results across all participants in much more variability than when comparing participants vowel pronunciations in a normal mode. However, this is where the descriptive statistics' powers end. If we wanted to know more about the potential significance between them, we would have to use either the standard error or confidence intervals as error bars. Or, we conduct some significance testing.
+
 ### 3. Visual Analysis in R (Vowel Charts)
 
-Similar to above, we use the same libraries and load the data for the normal voice mode and plotted the vowel chart (a common way of displaying vowel frequencies):
+As we deal with vowels, we could now further visualize the tongue-position that the participants adopt on average for each vowel. We use the same libraries and load the data and plot the vowel chart (a common way of displaying vowel frequencies):
 ```
 #get mean of value of each vowel
 means <- my_data%>%group_by(VOWEL)%>%summarise(mean_F1 = mean(F1),mean_F2 = mean(F2))
@@ -87,9 +89,9 @@ The same was repeated for the disguised voice mode.
 <img src="images/praat/R2.png">
 Image 6: Vowel Chart Disguised Voice Mode.
 
-### Findings 
+### 4. Conclusion and Caveat
 
-What we can see here is that there is a change in F1 and F2 frequencies. How signficant (and how big these changes are, would require some more statistical testing. The error bars in the data analysis do not allow any inferential interpretations, but rather display how much the data disperses around the mean. Moreover, in order to conclusively link this to a change in vowel position in the mouth (i.e. a change in pronunciation) further measurement techniques would be necessary (e.g. MRI Imaging or electropalatography). I hope that this could still nicely illustrate how useful vowel charts can be and how one can measure F1 and F2 values in _Praat_.
+What we can see here is that there is a change in F1 and F2 frequencies. How signficant (and how big these changes are), would require some more statistical testing. The error bars in the data analysis do not allow any inferential interpretations, but rather display how much the data disperses around the mean values. Moreover, in order to conclusively link this to a change in vowel position in the mouth (i.e. a change in pronunciation) further measurement techniques would be necessary (e.g. MRI Imaging or electropalatography). I hope that this could still nicely illustrate how useful vowel charts can be and how one can measure F1 and F2 values in _Praat_.
 
 ---
 ### References and Footnotes
