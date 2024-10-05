@@ -2,7 +2,7 @@
 
 ##  Part II: Measuring and Visualizing Vowel Formant Frequency Alterations as Voice Disguise Strategy
 
-A recent project of mine* explored the change of first and second formants in vowels as a means of voice disguise strategy, in addition to fundamental frequency alterations (see [Part I](/my_portfolio/posts/praat_vowels1_2.html)). We conducted an experiment in our Phonetics Lab at university, recording every participant with a regular microphone and an electroglottograph (EGG). For this part of the analysis, I only utilized the microphone data. The data was then further analysed in _Praat_ [1] and visualized in _R_ [2]. The first part of the research question was as follows: In how far do adult women employ alteration in the first two formants (F1, F2) as a voice disguise strategy?
+A recent project of mine* explored the change of first and second formants in vowels as a means of voice disguise strategy, in addition to fundamental frequency alterations (see [Part I](/my_portfolio/posts/praat_vowels1_2.html)). We conducted an experiment in our Phonetics Lab at university, recording every participant with a regular microphone and an electroglottograph (EGG). I will only report on the acoustic data. The data was then further analysed in _Praat_ [1] and visualized in _R_ [2]. The first part of the research question was as follows: In how far do adult women employ alteration in the first two formants (F1, F2) as a voice disguise strategy?
 
 Based on this research question, I could formulate the following hypotheses:
 
