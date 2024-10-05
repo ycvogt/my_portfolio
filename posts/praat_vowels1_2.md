@@ -6,16 +6,19 @@ In the following project* I explored inhowfar people change their fundamental fr
 * H0: There is no statistically significant difference between normal and disguised average fundamental frequencies among participants in continuous speech based on acoustic.
 * H1: There is a statistically significant difference between normal and disguised average fundamental frequencies among participants in continuous speech based on acoustic.
 
-The data was measured in _Praat_, by selecting the entire sentence of a participant and measuring the average F0 for the selected segment. This was repeated for all sentences of each participant, once for the regular and once for the disguised voice dataset. 
+The data was measured in _Praat_, by selecting the entire sentence of a participant and measuring the average F0 for the selected segment. This was repeated for all sentences of each participant, once for the regular and once for the disguised voice dataset. For more, see [Part II](/my_portfolio/posts/praat_vowels2_2.html).
 
 ### 1. Exploring the data
-
+#ToDo
 ### 2. Significance Testing
-
+#ToDo
 ### 3. Visualization in R and Python
-
+#ToDo
 ### 4. Conclusion
-
+#ToDo
 In [Part II](/my_portfolio/posts/praat_vowels2_2.html), I will explore alterations in the first and second formant frequencies and how one can visualize vowels in vowel charts. 
+
+### References
+*In this article, I used partly altered excerpts from this paper (for the full paper, please contact me).
 
 [Back](https://ycvogt.github.io/my_portfolio/)
