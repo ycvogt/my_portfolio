@@ -13,7 +13,7 @@
 ### R Projects
 [Exploring the Sounds of the World in _R_](/posts/phoible.md)<br/>
 [Part I: Hypothesis & Significance Testing: Fundamental Frequency Alteration](/posts/praat_vowels1_2.md)<br/>
-[Part II: Measuring & Visualizing Vowel Formants in _Praat_/_R_](/posts/praat_vowels2_2.md)
+[Part II: Measuring & Visualizing Vowel Formants in _Praat_ & _R_](/posts/praat_vowels2_2.md)
 
 ---
 ### Other Projects and GitHub publications
