@@ -86,10 +86,10 @@ What we can see here is that there is a change in F1 and F2 frequencies. How sig
 
 *In this article, I used partly altered excerpts from this paper (for the full paper, please contact me).
 
-[1]Boersma, Paul & Weenink, David (2024). Praat: doing phonetics by computer [Computer program]. Version 6.3.17, retrieved 21 August 2024 from [http://www.praat.org/](http://www.praat.org/).<br/>
-[2]RStudio Team (2024). RStudio: Integrated Development for R. RStudio, PBC, Boston. Available at [[http://www.praat.org/](http://www.rstudio.com/)](http://www.rstudio.com/).<br/>
-[3]Davenport, M., & Hannahs, S.J. (2010). Introducing Phonetics and Phonology (3rd ed.). Routledge. doi: [https://doi.org/10.4324/9780203785447](https://doi.org/10.4324/9780203785447).<br/>
-[4]Hansen Edwards, J. G. (2023). The Sounds of English Around the World: An Introduction to Phonetics and Phonology. Cambridge: Cambridge University Press.<br/>
+[1] Boersma, Paul & Weenink, David (2024). Praat: doing phonetics by computer [Computer program]. Version 6.3.17, retrieved 21 August 2024 from [http://www.praat.org/](http://www.praat.org/).<br/>
+[2] RStudio Team (2024). RStudio: Integrated Development for R. RStudio, PBC, Boston. Available at [http://www.rstudio.com/](http://www.rstudio.com/).<br/>
+[3] Davenport, M., & Hannahs, S.J. (2010). Introducing Phonetics and Phonology (3rd ed.). Routledge. doi: [https://doi.org/10.4324/9780203785447](https://doi.org/10.4324/9780203785447).<br/>
+[4] Hansen Edwards, J. G. (2023). The Sounds of English Around the World: An Introduction to Phonetics and Phonology. Cambridge: Cambridge University Press.<br/>
 
 A great overview on how to make such vowel charts in _R_ is presented by Joey Stanley: [Part 1](https://joeystanley.com/blog/making-vowel-plots-in-r-part-1/), [Part 2](https://joeystanley.com/blog/making-vowel-plots-in-r-part-2/).
 
