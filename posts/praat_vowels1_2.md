@@ -16,9 +16,9 @@ The data was measured in _Praat_, by selecting the entire sentence of a particip
 #ToDo
 ### 4. Conclusion
 #ToDo
-In [Part II](/my_portfolio/posts/praat_vowels2_2.html), I will explore alterations in the first and second formant frequencies and how one can visualize vowels in vowel charts. 
+In [Measuring & Visualizing Vowel Formants in Praat & R](/my_portfolio/posts/praat_vowels2_2.html), I will explore alterations in the first and second vowel formant frequencies and how one can visualize this in vowel charts using _R_. 
 
 ### References
-*In this article, I used partly altered excerpts from this paper (for the full paper, please contact me).
+*In this article, I used partly altered excerpts, data and ideas from my paper (for the full paper, please contact me).
 
 [Back](https://ycvogt.github.io/my_portfolio/)
