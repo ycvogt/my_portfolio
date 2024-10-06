@@ -25,16 +25,8 @@ Image 2: Measuring F1 and F2 values. My own voice recording disguised.
 
 ### 2. Data Analysis in R
 
-I used the following code to read the data and create the mean/standard deviation for the bar plot:
+I used the following code to create the mean/standard deviation for the bar plot, after loading the libraries dplyr and ggplot2 and reading in the files:
 ```
-##load libraries
-library(dplyr)
-library(ggplot2)
-
-##load data
-my_data <- read.table(file="D:/Uni/Master/Semester_8/VA/Results.txt", header=TRUE, sep="\t", encoding="UTF-8")
-my_data_disguised <- read.table(file="D:/Uni/Master/Semester_8/VA/Results_disguised.txt", header=TRUE, sep="\t", encoding="UTF-8")
-
 ##get stats from data
 stats_df <- my_data%>%group_by(VOWEL)%>%
   summarise(mean_F1 = round(mean(F1),digits=2), mean_F2 = round(mean(F2),digits=2), stdev_f1 = round(sd(F1),digits=2), stdev_F2 = round(sd(F2),digits=2))%>%as.data.frame()
