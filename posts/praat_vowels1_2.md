@@ -57,10 +57,10 @@ alternative hypothesis: true difference in means is not equal to 0
 sample estimates: mean of the differences -25.89366
 ```
 
-It is evident, that there is a clear, significant difference between the normal and disguised voice modes in terms of pitch. In other words, there is a difference in pitch between normal and disguised voice modes. The null hypothesis can therefore be rejected in favour of the alternative hypothesis, that there is a significant difference between the normal pitch and the pitch used in disguised voices.
+It is evident, that there is a clear, significant difference between the normal and disguised voice modes in terms of pitch. In other words, there is a difference in pitch between normal and disguised voice modes. The null hypothesis can therefore be rejected in favour of the alternative hypothesis, that there is a significant difference between the normal pitch and the pitch used in disguised voices. The negative t-value indicates that the sample mean of the normal voice mode data was significantly smaller than the one of the disguised voice mode - in other words, the pitch was lower in normal voice mode than in disguised voice mode. The first data exploration can show us a similar trend of the data, i.e. that many participants chose to raise their pitch, while only a few lowered it, and one would not alter it at all. 
 
 ### 3. Conclusion
-What this means, is that we can definitively say that there is an overall difference in terms of pitch across all participants, when they were prompted to disguise their voice. What we do not know, is whether this was higher or lower pitch, or how "strong" the change was. The first data exploration can show us, however, the trend of the data, i.e. that many participants chose to raise their pitch, while a few lowered it, and one would not alter it at all. 
+What this means, is that we can definitively say that there is an overall difference in terms of pitch across all participants, when they were prompted to disguise their voice. What we do not know is how "strong" the change was. 
 
 In [Measuring & Visualizing Vowel Formants in Praat & R](/my_portfolio/posts/praat_vowels2_2.html), I will explore alterations in the first and second vowel formant frequencies and how one can visualize this in vowel charts using _R_. 
 
