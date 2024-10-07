@@ -30,10 +30,12 @@ result <- result[-c(1, 14, 27, 40, 53, 63, 66, 79, 92, 105, 118, 131, 138), ]
 rownames(result) <- 1:nrow(result) #reset the index
 print(result)
 ```
-After repeating this for the disguised data, we merge the two datasets together: ```df_all <- rbind(result, result_disg)```
+After repeating this for the disguised data, we merge the two datasets together: ```df_all <- rbind(result, result_disg)```.
+
 Finally, we can plot it with ```plotly```:
 
 <iframe src="images/praat/pitch.html" width="100%" height="400px" style="border:none;"></iframe>
+
 
 What we can see from these boxplots, is that there is a difference in the average pitches chosen in disguised mode, compared to normal mode.
 
