@@ -34,7 +34,7 @@ After repeating this for the disguised data, we merge the two datasets together:
 
 Finally, we can plot it with ```plotly```:
 
-<iframe src="images/praat/pitch.html" width="100%" height="400px" style="border:none;"></iframe>
+<iframe src="images/praat/pitch.html" width="100%" height="400px" style="border:none;"></iframe><br/>
 
 
 What we can see from these boxplots, is that there is a difference in the average pitches chosen in disguised mode, compared to normal mode.
@@ -46,7 +46,8 @@ Now, we will do a paired, two-sided t-test to check across all datapoints of all
 t.test(x=as.numeric(result$Pitch), y=as.numeric(result_disg$Pitch),
        alternative = c("two.sided", "less", "greater"),
        mu = 0, paired = TRUE, var.equal = FALSE,
-       conf.level = 0.95)```
+       conf.level = 0.95)
+```
 
 The output is:
 ```
