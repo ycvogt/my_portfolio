@@ -54,7 +54,8 @@ The output is:
 t = -5.4708, df = 129, p-value = 2.24e-07
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval: -35.25809 -16.52923
-sample estimates: mean of the differences -25.89366```
+sample estimates: mean of the differences -25.89366
+```
 
 It is evident, that there is a clear, significant difference between the normal and disguised voice modes in terms of pitch. In other words, there is a difference in pitch between normal and disguised voice modes. The null hypothesis can therefore be rejected in favour of the alternative hypothesis, that there is a significant difference between the normal pitch and the pitch used in disguised voices.
 
