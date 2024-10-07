@@ -8,7 +8,7 @@ In the following project* I explored inhowfar people change their fundamental fr
 
 The data was measured in _Praat_, by selecting the entire sentence of a participant and measuring the average F0 for the selected segment. This was repeated for all sentences of each participant, once for the regular and once for the disguised voice dataset. For more, see [Measuring & Visualizing Vowel Formants in Praat & R](/my_portfolio/posts/praat_vowels2_2.html).
 
-### 1. Exploring the data
+### 1. Preprocessing and Exploring the Data
 First, we want to reorder the datastructure and get an overview of the collected data. The data was collected with one column for each student, the rows represent each the average pitch measured for the entire sentence. This is not very useful, so let's restructure it:
 
 ```
@@ -41,10 +41,10 @@ What we can see from these boxplots, is that there is a difference in the averag
 
 ### 2. Significance Testing
 #ToDo
-### 3. Visualization in R and Python
+
+### 3. Conclusion
 #ToDo
-### 4. Conclusion
-#ToDo
+The null hypothesis...alternative hypothesis...
 In [Measuring & Visualizing Vowel Formants in Praat & R](/my_portfolio/posts/praat_vowels2_2.html), I will explore alterations in the first and second vowel formant frequencies and how one can visualize this in vowel charts using _R_. 
 
 ### References
