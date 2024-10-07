@@ -40,11 +40,26 @@ Finally, we can plot it with ```plotly```:
 What we can see from these boxplots, is that there is a difference in the average pitches chosen in disguised mode, compared to normal mode.
 
 ### 2. Significance Testing
-#ToDo
+
+Now, we will do a paired, two-sided t-test to check across all datapoints of all students whether there is a difference between normal and disguised:
+```
+t.test(x=as.numeric(result$Pitch), y=as.numeric(result_disg$Pitch),
+       alternative = c("two.sided", "less", "greater"),
+       mu = 0, paired = TRUE, var.equal = FALSE,
+       conf.level = 0.95)```
+
+The output is:
+```
+t = -5.4708, df = 129, p-value = 2.24e-07
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval: -35.25809 -16.52923
+sample estimates: mean of the differences -25.89366```
+
+It is evident, that there is a clear, significant difference between the normal and disguised voice modes in terms of pitch. In other words, there is a difference in pitch between normal and disguised voice modes. The null hypothesis can therefore be rejected in favour of the alternative hypothesis, that there is a significant difference between the normal pitch and the pitch used in disguised voices.
 
 ### 3. Conclusion
-#ToDo
-The null hypothesis...alternative hypothesis...
+What this means, is that we can definitively say that there is an overall difference in terms of pitch across all participants, when they were prompted to disguise their voice. What we do not know, is whether this was higher or lower pitch, or how "strong" the change was. The first data exploration can show us, however, the trend of the data, i.e. that many participants chose to raise their pitch, while a few lowered it, and one would not alter it at all. 
+
 In [Measuring & Visualizing Vowel Formants in Praat & R](/my_portfolio/posts/praat_vowels2_2.html), I will explore alterations in the first and second vowel formant frequencies and how one can visualize this in vowel charts using _R_. 
 
 ### References
