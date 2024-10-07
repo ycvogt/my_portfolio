@@ -9,7 +9,32 @@ In the following project* I explored inhowfar people change their fundamental fr
 The data was measured in _Praat_, by selecting the entire sentence of a participant and measuring the average F0 for the selected segment. This was repeated for all sentences of each participant, once for the regular and once for the disguised voice dataset. For more, see [Measuring & Visualizing Vowel Formants in Praat & R](/my_portfolio/posts/praat_vowels2_2.html).
 
 ### 1. Exploring the data
-#ToDo
+First, we want to reorder the datastructure and get an overview of the collected data. The data was collected with one column for each student, the rows represent each the average pitch measured for the entire sentence. This is not very useful, so let's restructure it:
+
+```
+# Load your data
+# Reshaping the data input to a more fitting format 
+result <- data.frame() #empty dataframe to populate
+for (i in colnames(df_normal))
+  {
+  Pitch <- df_normal[[i]]
+  Student <- i
+  Manner <- "normal"
+  df<- data.frame(Pitch = Pitch, Student = Student, Manner = Manner)
+  #print(df)
+  result <- result %>% rbind(i, df)
+  }
+#remove lines with heads and a few N/A ones
+#print(result)
+result <- result[-c(1, 14, 27, 40, 53, 63, 66, 79, 92, 105, 118, 131, 138), ]
+rownames(result) <- 1:nrow(result) #reset the index
+print(result)
+```
+After repeating this for the disguised data, we merge the two datasets together: ```df_all <- rbind(result, result_disg)```
+Finally, we can plot it with ```plotly```:
+
+
+
 ### 2. Significance Testing
 #ToDo
 ### 3. Visualization in R and Python
