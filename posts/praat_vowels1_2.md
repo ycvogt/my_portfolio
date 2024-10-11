@@ -41,7 +41,7 @@ What we can see from these boxplots, is that there is a difference in the averag
 
 ### 2. Significance Testing
 
-Now, we will do a paired, two-sided t-test to check across all datapoints of all students whether there is a difference between normal and disguised:
+Now, we will do a paired, two-sided t-test (alpha = 0.05) to check across all datapoints of all students whether there is a difference between normal and disguised:
 ```
 t.test(x=as.numeric(result$Pitch), y=as.numeric(result_disg$Pitch),
        alternative = c("two.sided", "less", "greater"),
