@@ -7,6 +7,7 @@ The aim of this project was to automatically classify _BBC News_ articles into 5
 **Skills**: machine learning, training/validation loss visualization, word embedding, text classification <br>
 **Libraries**: pandas, numpy, matplotlib, pytorch, sklearn, plotly
 
+For the entire code, please see my [repository](https://github.com/ycvogt/machine_learning).
 ---
 ### 1. Preparing Textual Data
 
