@@ -8,6 +8,7 @@ The aim of this project was to automatically classify _BBC News_ articles into 5
 **Libraries**: pandas, numpy, matplotlib, pytorch, sklearn, plotly
 
 For the entire code, please see my [repository](https://github.com/ycvogt/machine_learning).
+
 ---
 ### 1. Preparing Textual Data
 
