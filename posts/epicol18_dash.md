@@ -15,16 +15,16 @@ This corpus comprises a collection of epistolary novels, published between the e
 
 Here are some first impressions:
 
-**Start page**
+## **Start page**
 <img src="images/epicol18/Startpage.png"/>
-**Top words and Parts-of-Speech**
+## **Top words and Parts-of-Speech**
 <img src="images/epicol18/TopWordsPOS3.png"/>
-**Word Frequency and Visualization**
+## **Word Frequency and Visualization**
 <img src="images/epicol18/WordFrequency.png"/>
-**Find N-Grams of sizes 2,3,4,5**
+## **Find N-Grams of sizes 2,3,4,5**
 <img src="images/epicol18/Ngram.png"/>
-**Show Key Words in Context (KWIC)**
+## **Show Key Words in Context (KWIC)**
 <img src="images/epicol18/KWIC.png"/>
-**Diachronic Frequency Visualization**
+## **Diachronic Frequency Visualization**
 <img src="images/epicol18/DiachronicAnalysis.png"/>
 [Back](https://ycvogt.github.io/my_portfolio/)
