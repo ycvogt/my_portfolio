@@ -1,6 +1,6 @@
 [Back](https://ycvogt.github.io/my_portfolio/)
 
-# EPICOL18 - A linguistic corpus-interface to an 18th century epistolary novels corpus
+# EPICOL18 - An interactive corpus-interface to an 18th century epistolary novels corpus
 
  ~ Coming Soon: User Documentation Manual, detailed background with each text source and downloadable file/package on GitHub! ~ 
 
@@ -15,10 +15,16 @@ This corpus comprises a collection of epistolary novels, published between the e
 
 Here are some first impressions:
 
+**Start page**
 <img src="images/epicol18/Startpage.png"/>
+**Top words and Parts-of-Speech**
 <img src="images/epicol18/TopWordsPOS3.png"/>
+**Word Frequency and Visualization**
 <img src="images/epicol18/WordFrequency.png"/>
+**Find N-Grams of sizes 2,3,4,5**
 <img src="images/epicol18/Ngram.png"/>
+**Show Key Words in Context (KWIC)**
 <img src="images/epicol18/KWIC.png"/>
-
+**Diachronic Frequency Visualization**
+<img src="images/epicol18/DiachronicAnalysis.png"/>
 [Back](https://ycvogt.github.io/my_portfolio/)
