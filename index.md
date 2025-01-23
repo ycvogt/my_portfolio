@@ -2,6 +2,7 @@
 
 ---
 ### Python Projects
+[Interactive Corpus Analysis Tool in Dash, SQl, Python for EPICOL18](/posts/epicol18_dash.md)<br/>
 [The Importance of Text Processing & Analysis](/posts/dramatictext.md)<br/>
 [Netflix Shows & Movies Analysis](/posts/movies.md)<br/>
 [Unsupervised Sentiment Analysis: Bridgerton YouTube Comments](/posts/sentiment_bridgerton.md)<br/>
