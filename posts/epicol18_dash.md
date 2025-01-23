@@ -1,3 +1,5 @@
+[Back](https://ycvogt.github.io/my_portfolio/)
+
 # EPICOL18 - A linguistic corpus-interface to an 18th century epistolary novels corpus
 
  ~ Coming Soon: User Documentation Manual, detailed background with each text source and downloadable file/package on GitHub! ~ 
@@ -12,3 +14,11 @@ This corpus comprises a collection of epistolary novels, published between the e
 * Keyword-in-Context (KWIC): Investigate how specific words or phrases were used across texts, authors, and analyze timelines to uncover nuanced contexts and patterns.
 
 Here are some first impressions:
+
+<img src="images/epicol18/Startpage.png"/>
+<img src="images/epicol18/TopWordsPOS3.png"/>
+<img src="images/epicol18/WordFrequency.png"/>
+<img src="images/epicol18/Ngram.png"/>
+<img src="images/epicol18/KWIC.png"/>
+
+[Back](https://ycvogt.github.io/my_portfolio/)
