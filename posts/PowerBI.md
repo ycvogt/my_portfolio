@@ -11,7 +11,7 @@ the variables gender, education, education background, age and monthly income. T
 
 <img src="images/PowerBI/Dashboard2.PNG" width="500" class="center"/>
 
-*Analysis*: 
+*Analysis*: Analysis will follow.
 
 
 Sources:
