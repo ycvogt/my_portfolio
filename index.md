@@ -1,6 +1,6 @@
 [About Me](/posts/about.md)
 
-### Projects to be completed
+### Ongoing Projects
 [Interactive Corpus Analysis Tool in Dash, SQL, Python for EPICOL18](/posts/epicol18_dash.md)<br/>
 [MS Power BI Dashboards](/posts/PowerBI.md)<br/>
 
