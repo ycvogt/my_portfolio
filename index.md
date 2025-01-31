@@ -1,8 +1,10 @@
 [About Me](/posts/about.md)
 
+### Projects to be completed
+[Interactive Corpus Analysis Tool in Dash, SQL, Python for EPICOL18](/posts/epicol18_dash.md)<br/>
+[MS Power BI Dashboards](/posts/PowerBI.md)<br/>
 ---
 ### Python Projects
-[Interactive Corpus Analysis Tool in Dash, SQL, Python for EPICOL18](/posts/epicol18_dash.md)<br/>
 [The Importance of Text Processing & Analysis](/posts/dramatictext.md)<br/>
 [Netflix Shows & Movies Analysis](/posts/movies.md)<br/>
 [Unsupervised Sentiment Analysis: Bridgerton YouTube Comments](/posts/sentiment_bridgerton.md)<br/>
