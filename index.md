@@ -3,6 +3,7 @@
 ### Projects to be completed
 [Interactive Corpus Analysis Tool in Dash, SQL, Python for EPICOL18](/posts/epicol18_dash.md)<br/>
 [MS Power BI Dashboards](/posts/PowerBI.md)<br/>
+
 ---
 ### Python Projects
 [The Importance of Text Processing & Analysis](/posts/dramatictext.md)<br/>
