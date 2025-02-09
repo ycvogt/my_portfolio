@@ -2,7 +2,14 @@
 
 ##  Measuring and Visualizing Vowel Formant Frequency Alterations as Voice Disguise Strategy
 
-A recent project of mine* explored the change of first and second formants in vowels as a means of voice disguise strategy, in addition to fundamental frequency alterations (see [Hypothesis & Significance Testing: Fundamental Frequency Alterations ](/my_portfolio/posts/praat_vowels1_2.html)). We conducted an experiment in our Phonetics Lab at university, recording every participant with a regular microphone and an electroglottograph (EGG). The participants (n=11) were prompted to read a text consisting of twelve sentences once in a ’normal’ voice and once in a ’disguised voice’ that should render them unrecognizable, even for people who know them well. They were not given any input as to what the strategy might entail to avoid any interference with their ad hoc solution to disguise their voice. I will only report on the acoustic data here. The data was analysed in _Praat_ [1] and visualized in _R_ [2]. The first part of the research question was as follows: Inhowfar do adult women employ alteration in the first two formants (F1, F2) as a voice disguise strategy?
+A recent project of mine* explored the change of first and second formants in vowels as a means of voice disguise strategy, in addition to fundamental frequency alterations (see [Hypothesis & Significance Testing: Fundamental Frequency Alterations ](/my_portfolio/posts/praat_vowels1_2.html)). 
+
+**Libraries**: dplyr, ggplot2
+**Dataset**: EGG and microphone recordings of University of Zurich student participants
+
+---
+
+We conducted an experiment in our Phonetics Lab at university, recording every participant with a regular microphone and an electroglottograph (EGG). The participants (n=11) were prompted to read a text consisting of twelve sentences once in a ’normal’ voice and once in a ’disguised voice’ that should render them unrecognizable, even for people who know them well. They were not given any input as to what the strategy might entail to avoid any interference with their ad hoc solution to disguise their voice. I will only report on the acoustic data here. The data was analysed in _Praat_ [1] and visualized in _R_ [2]. The first part of the research question was as follows: Inhowfar do adult women employ alteration in the first two formants (F1, F2) as a voice disguise strategy?
 
 Based on this research question, I could formulate the following hypotheses:
 
