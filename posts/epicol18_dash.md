@@ -6,16 +6,14 @@
     <img src="epicol18/epicol18.png">
 </p>
 
-Epistolary Corpus of Long 18th Century Literature (EPICOL18) is now available with a corpus-interface programmed in Python and Dash that connects to a SQL Database of all texts.
+Epistolary Corpus of Long 18th Century Literature (EPICOL18) is now available with a corpus-interface programmed in Python and Dash that connects to a SQL Database of all texts. This EPICOL18 web-interface allows for advanced text search across a 4-million-word corpus. With features such as visualizing and downloading results as PNGs and CSVs, you can explore linguistic patterns in early modern epistolary fiction.
+
+For a detailed documentation and description of the project, see [here](https://github.com/ycvogt/epicol18).
 
 **Libraries**: dash, sqlite, html, css, wordcloud, spacy, nltk, pandas, regex <br/>
 **Dataset**: collected by me, sources listed in the GitHub repository (see project link below)
 
 ---
-
-This EPICOL18 web-interface, programmed in Python using Dash and Sqlite, allows for advanced text search across a 4-million-word corpus. With features such as visualizing and downloading results as PNGs and CSVs, you can explore linguistic patterns in early modern epistolary fiction.
-
-For a detailed documentation and description of the project, see [here](https://github.com/ycvogt/epicol18).
 
 ### Functions and Features 
 
