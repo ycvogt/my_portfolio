@@ -1,7 +1,7 @@
 [Back](https://ycvogt.github.io/my_portfolio/)
 
 
-# Unsupervised Sentiment Analysis of Bridgerton YouTube Trailer Comments
+# Sentiment Analysis of Bridgerton YouTube Trailer Comments
 
 The popular Netflix Series "Bridgerton" (based on the novel series by Julia Quinn) seems to cause many emotions amongst viewers whenever new season trailers are released. What do people think about the different seasons based on the trailers? Let’s find out!
 
@@ -84,7 +84,7 @@ Finally, I made some visualizations based on the results of the model:
 
 <iframe src="images/sentiment_bridgerton/final_image.html" width="100%" height="400px" style="border:none;"></iframe><br/>
 
-We an immediately see that the vast majority of all trailer comments reflect the emotion "joy". So far so good! However, we can also see that "anger" is equally present, with roughly a third of the comments reflecting this emotion. Especially season 3 seems to have stirred a lot of "anger". This might have to do with the changes that the directors made to the original book series by Julia Quinn, which would also explain the high number of comments relating to "surprise". The users express the emotion of "love" in some way or another in all trailers more or less equally. "Sadness" finds the greatest expression in the spin-off _Queen Charlotte_, which might have to do with the sadness of the story. 
+One caveat in this study is that we did not fine-tune the model to the data set. Many words may erroneously trigger the model to tag it as one or the other emotion. For example, "prejudice" in the first example, may be a trigger for the "anger" category, when the global sentiment in the sentence is not "anger". We can immediately see that the vast majority of all trailer comments reflect the emotion "joy". So far so good! However, we can also see that "anger" is equally present, with roughly a third of the comments reflecting this emotion. Especially season 3 seems to have stirred a lot of "anger". This might have to do with the changes that the directors made to the original book series by Julia Quinn, which would also explain the high number of comments relating to "surprise". The users express the emotion of "love" in some way or another in all trailers more or less equally. "Sadness" finds the greatest expression in the spin-off _Queen Charlotte_, which might have to do with the sadness of the story. 
 
 In order to learn more about the content of the comments, we need to look at some word-frequencies.
 
