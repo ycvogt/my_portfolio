@@ -8,7 +8,6 @@
 [Interactive Corpus Analysis Tool in Dash, SQL, Python for EPICOL18](/posts/epicol18_dash.md)<br/>
 [The Importance of Text Processing & Analysis](/posts/dramatictext.md)<br/>
 [Netflix Shows & Movies Analysis](/posts/movies.md)<br/>
-[Unsupervised Sentiment Analysis: Bridgerton YouTube Comments](/posts/sentiment_bridgerton.md)<br/>
 [Supervised Machine Learning & BBC Text Classification](/posts/ml_classificationtext.md)
 <!--<img src="images/dummy_thumbnail.jpg?raw=true"/>-->
 
